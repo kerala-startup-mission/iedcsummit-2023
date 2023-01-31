@@ -5,6 +5,10 @@ module.exports = {
     // colors: {
     //   pril: "#031B88",
     // },
+    fontFamily: {
+      'sans': ['Raleway', 'Manjari', 'ui-sans-serif', 'system-ui', '-apple-system'],
+      'poppins': ['Poppins', 'Manjari', 'ui-sans-serif', 'system-ui', '-apple-system'],
+    },
     backgroundImage: {
       'ban-ner': "url('./images/banner.png')",
     },

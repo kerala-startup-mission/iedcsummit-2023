@@ -100,9 +100,9 @@ function Homepage() {
           </svg>
         </button>
       )}
-      <div className="bg-black bg-opacity-100">
-        <div className="bg-cover bg-[url('images/bgggg.jpg')] opacity-100 w-full h-screen pb-5">
-          <nav className="w-full shadow">
+      <div className="bg-cover bg-[url('images/bgggg.jpg')]  bg-opacity-100">
+        <div className="bg-black bg-opacity-50 w-full h-screen pb-5">
+          <nav className="w-full ">
             <div className="justify-between px-4 mx-auto lg:max-w-6xl md:items-center md:flex md:px-5  ">
               <div>
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -208,10 +208,7 @@ function Homepage() {
           <div className="inline-block ">
             <div class="pt-20 ">
               <h1 className=" lg:text-start md:text-center sm:text-center font-poppins text-2xl text-white dark:text-white  font-poppins">
-                Asia's <span className="font-bold">largest</span>{" "}
-                <span className="text-white">
-                  summit for Aspiring entrepreneur
-                </span>
+                Asia's Largest Summit for Aspiring Entrepreneurs
               </h1>
             </div>
 
@@ -223,9 +220,11 @@ function Homepage() {
                 </span>{" "}
                 <span className="text-white">2023</span>
               </h1>
-              <h1 className="lg:text-right	md:text-center sm:text-center right-44 pt-3 text-2xl  leading-none tracking-tight text-white  dark:text-white font-poppins">
-                Unravelling Dimensions Uniting Perspectives{" "}
-              </h1>
+              <div className="text-right">
+                <h1 className="lg:text-right bg-orange-600 inline-block	md:text-center sm:text-center px-3 py-2 text-xl  leading-none tracking-tight text-white  dark:text-white font-poppins">
+                  Unravelling Dimensions Uniting Perspectives{" "}
+                </h1>
+              </div>
             </div>
 
           </div> 
@@ -258,7 +257,7 @@ function Homepage() {
               </div>
             </div>
 
-            <h4 className=" flex justify-center pt-5 lg:text-3xl  sm:text-2xl md:text-2xl text-white dark:text-white font-poppins">
+            <h4 className=" flex justify-center items-center pt-5 lg:text-3xl  sm:text-2xl md:text-2xl text-white dark:text-white font-poppins">
               <svg
                 className="h-7 w-7 text-orange-600 dark:text-orange-600"
                 fill="currentColor"
@@ -304,7 +303,7 @@ function Homepage() {
               </h1>
               <div className="flex">
                 <div className="w-10 h-20 mr-4  mt-2 bg-orange-600"></div>
-                <p className="text-justify font-normal text-xl font-poppins">
+                <p className="text-justify font-normal text-lg font-poppins">
                   Kerala Startup Mission is organizing the seventh edition of
                   the flagship event- IEDC Summit 2023 and we, Rajagiri School
                   of Engineering and Technology, heartily welcome you to witness
@@ -313,7 +312,7 @@ function Homepage() {
                 </p>
               </div>
               <br />
-              <p className="ml-7 text-justify font-normal text-xl font-poppins">
+              <p className="ml-7 text-justify font-normal text-lg font-poppins">
                 IEDC Summit is an amalgamation of events from a plethora of
                 domains, including technology, entrepreneurship, skill
                 development, and so much more. It facilitates as a platform for
@@ -325,8 +324,7 @@ function Homepage() {
                 and financial literacy.
               </p>
               <br />
-              <p className="text-2xl font-bold font-poppins">
-                {" "}
+              <p className="text-xl font-bold font-poppins">
                 Let's unravel dimensions and unite perspectives together!
               </p>
             </div>
@@ -341,45 +339,45 @@ function Homepage() {
 
       <div className="bg-white justify pt-3  w-full font-poppins">
         <div class=" flex  bg-ban-ner w-full   justify-around items-center   ">
-          <div className="flex  flex-col  items-start text-white  py-1  px-1 justify-center ">
+          <div className="flex  flex-col  items-center text-white  py-1  px-1 justify-center ">
             <div className="font-poppins lg:text-7xl md:text-4xl  sm:text-1xl  font-bold">
               425
             </div>
-            <div className="font-poppins lg:text-4xl  md:text-2xl  sm:text-1xl">IEDCs</div>
+            <div className="font-poppins lg:text-xl  md:text-lg  sm:text-1xl">IEDCs</div>
           </div>
 
-          <div className="flex flex-col  items-start text-white py-10 justify-center ">
+          <div className="flex flex-col  items-center text-white py-10 justify-center ">
             <div className="font-poppins lg:text-7xl  md:text-4xl sm:text-1xl  font-bold">
               8K+
             </div>
-            <div className="font-poppins lg:text-4xl  md:text-2xl  sm:text-1xl sm:text-sm">
+            <div className="font-poppins lg:text-xl  md:text-lg  sm:text-1xl sm:text-sm">
               Changemakers
             </div>
           </div>
 
-          <div className="flex flex-col items-start  text-white py-10 ">
+          <div className="flex flex-col items-center  text-white py-10 ">
             <div className="font-poppins lg:text-7xl  md:text-4xl sm:text-1xl  font-bold">
               50K+
             </div>
-            <div className="font-poppins lg:text-4xl  md:text-2xl  sm:text-1xl ">
+            <div className="font-poppins lg:text-xl  md:text-lg  sm:text-1xl ">
               Innovators
             </div>
           </div>
 
-          <div className="flex flex-col items-start	 text-white py-10 ">
+          <div className="flex flex-col items-center	 text-white py-10 ">
             <div className="font-poppins lg:text-7xl md:text-4xl  sm:text-1xl  font-bold">
               336+
             </div>
-            <div className="font-poppins lg:text-4xl md:text-2xl  sm:text-1xl ">
-              StartUps
+            <div className="font-poppins lg:text-xl  md:text-lg  sm:text-1xl ">
+              Startups
             </div>
           </div>
 
-          <div className="flex flex-col 	items-start text-white  py-10 ">
+          <div className="flex flex-col 	items-center text-white  py-10 ">
             <div className="font-poppins lg:text-7xl  md:text-4xl sm:text-1xl font-bold">
               5K+
             </div>
-            <div className="font-poppins lg:text-4xl  md:text-2xl sm:text-1xl">
+            <div className="font-poppins lg:text-xl  md:text-lg sm:text-1xl">
               Activities
             </div>
           </div>
@@ -416,34 +414,34 @@ function Homepage() {
       <footer className="pt-2 bg-gray-900 justify-center dark:bg-gray-900 font-poppins ">
         <div className="grid flex md:grid-cols-2 lg:grid-cols-2   ">
           <div className="justify-center center">
-            <div className="flex flex-row justify-center space-x-10 py-5">
+            <div className="flex flex-row justify-center items-center space-x-5 py-5">
+              <img className="h-20" src={ksum} />
               <img className="h-12  w-26 sm:w-30" src={iedc} />
-              <img className="h-14 w-30" src={ksum} />
             </div>
             <ul>
               <li className="mb-4">
-                <p className="font-poppins text-gray-600  dark:text-gray-600">
+                <p className="font-poppins text-white">
                   G3B, Thejaswini, Technopark Campus
                 </p>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">
+                <p className="font-poppins text-white">
                   Kariyavattom, Trivandrum, Kerala 695581
                 </p>
               </li>
               <li>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">For Queries</p>
-                <p className="font-poppins text-gray-400  dark:text-gray-400 text-sm lg:text:md ">
+                <p className="font-poppins text-white">For Queries</p>
+                <p className="font-poppins text-white text-sm lg:text:md ">
                   iedckerala@startupmission.in
                 </p>
               </li>
 
               <li>
-                <p className="font-poppins pt-5 text-gray-400  dark:text-gray-400">
+                <p className="font-poppins pt-5 text-white">
                   Bergin S Russel
                 </p>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">
+                <p className="font-poppins text-white">
                   iedckerala@startupmission.in
                 </p>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">6238998379</p>
+                <p className="font-poppins text-white">6238998379</p>
               </li>
             </ul>
           </div>
@@ -454,30 +452,30 @@ function Homepage() {
             </div>
             <ul className="">
               <li className="mb-4">
-                <p className="font-poppins text-gray-600  dark:text-gray-600">
+                <p className="font-poppins text-white">
                   Rajagiri Valley, Kakkanad
                 </p>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">
+                <p className="font-poppins text-white">
                   Kochi, Kerala, 682039
                 </p>
               </li>
               <li>
-                <p className="font-poppins text-gray-600   dark:text-gray-600  ">
+                <p className="font-poppins text-white ">
                   For Queries
                 </p>
-                <p className="font-poppins text-gray-400  dark:text-gray-400 text-sm lg:text:md">
+                <p className="font-poppins text-white text-sm lg:text:md">
                   rsetiedc@rajagiritech.edu.in
                 </p>
               </li>
 
               <li>
-                <p className="font-poppins pt-5 text-gray-400  dark:text-gray-400">
+                <p className="font-poppins pt-5 text-white">
                   Nitheesh Kurian
                 </p>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">
+                <p className="font-poppins text-white">
                   nitheeshk@rajagiritech.edu.in
                 </p>
-                <p className="font-poppins text-gray-600  dark:text-gray-600">9497413879</p>
+                <p className="font-poppins text-white">9497413879</p>
               </li>
             </ul>
           </div>
