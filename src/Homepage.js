@@ -100,8 +100,8 @@ function Homepage() {
           </svg>
         </button>
       )}
-      <div className="bg-cover bg-[url('images/bgggg.jpg')]  bg-opacity-100">
-        <div className="bg-black bg-opacity-50 w-full h-screen pb-5">
+      <div className="bg-cover bg-center bg-[url('images/bgggg.jpg')]  bg-opacity-100">
+        <div className="bg-black bg-opacity-50 w-full h-full pb-5">
           <nav className="w-full ">
             <div className="justify-between px-4 mx-auto lg:max-w-6xl md:items-center md:flex md:px-5  ">
               <div>
@@ -221,7 +221,7 @@ function Homepage() {
                 <span className="text-white">2023</span>
               </h1>
               <div className="text-right">
-                <h1 className="lg:text-right bg-orange-600 inline-block	md:text-center sm:text-center px-3 py-2 text-xl  leading-none tracking-tight text-white  dark:text-white font-poppins">
+                <h1 className="lg:text-right max-[500px]:text-sm bg-orange-600 inline-block	md:text-center sm:text-center px-3 py-2 text-xl  leading-none tracking-tight text-white  dark:text-white font-poppins">
                   Unravelling Dimensions Uniting Perspectives{" "}
                 </h1>
               </div>
@@ -274,7 +274,7 @@ function Homepage() {
               Rajagiri School of Engineering and Technology
             </h4>
 
-            <div className=" space-x-20 flex flex-row justify-center pt-10 ">
+            <div className=" gap-5 w-full flex flex-col sm:flex-row justify-center items-center pt-10 ">
               <button
                 type="button"
                 className="tracking-wide w-80 h-14  sm:text-md rounded-full lg:text-lg focus:outline-none text-white bg-orange-600 hover:bg-orange-700 focus:ring-2 focus:ring-orange-900 rounded-lg sm:text-md font-bold px-5 lg:py-2.5 mr-2 mb-2 dark:focus:ring-orange-900 font-poppins"
@@ -283,7 +283,8 @@ function Homepage() {
               </button>
               <button
                 type="button"
-                className="font-poppins tracking-wide  sm:text-md w-80 h-14 text-white hover:text-white border border-white-600 hover:bg-orange-600 focus:ring-2 focus:outline-none focus:ring-white-300 rounded-full lg:text-lg font-bold px-10 lg:py-2.5 text-center mr-10 border-white-300 mb-10 focus:ring-orange-900 border-white-300 dark:border-white-300 dark:text-white dark:hover:text-white dark:hover:bg-orange-600 dark:focus:ring-orange-900"
+                className="tracking-wide w-80 h-14  sm:text-md rounded-full lg:text-lg focus:outline-none  sm:text-md font-bold px-5 lg:py-2.5 mr-2 mb-2 focus:ring-orange-900 border-white-300 dark:border-white-300 dark:text-white dark:hover:text-white dark:hover:bg-orange-600 dark:focus:ring-orange-900 font-poppins hover:text-white border border-white-600 hover:bg-orange-600 focus:ring-2 focus:outline-none focus:ring-white-300 text-center  border-white-300  border-white-300 dark:border-white-300"
+                // className="font-poppins tracking-wide  sm:text-md w-80 h-14 text-white hover:text-white border border-white-600 hover:bg-orange-600 focus:ring-2 focus:outline-none focus:ring-white-300 rounded-full lg:text-lg font-bold px-10 lg:py-2.5 text-center mr-10 border-white-300 mb-10 focus:ring-orange-900 border-white-300 dark:border-white-300 dark:text-white dark:hover:text-white dark:hover:bg-orange-600 dark:focus:ring-orange-900"
               >
                 View Schedule
               </button>
@@ -292,7 +293,7 @@ function Homepage() {
         </div>
 
         {/* ************************************ABOUT************************************ */}
-        <div className="lg:flex md:flex bg-white font-poppins " id="section-about">
+        <div className="lg:flex md:flex bg-white font-poppins w-full " id="section-about">
           <div className="lg:w-1/2 lg:pt-24 pl-5 md:w-1/2 md:pl-8 sm:pl-4 md:pr-4 sm:pr-4 mr-10">
             <div className="text-center pt-5 sm:pt-0 ">
               <h1 className="font-poppins pt-1 text-3xl md:text-4xl font-extrabold md:justify-start text-gray-900 pb-4  dark:text-black ">
@@ -329,7 +330,7 @@ function Homepage() {
               </p>
             </div>
           </div>
-          <div className="lg:pl-10 lg:w-1/2 md:w-1/2 ">
+          <div className="lg:pl-10 lg:w-1/2 md:w-1/2 overflow:hidden">
             <img className="pt-10 lg:w-90 max-[500px]:pl-4" src={pic}></img>
           </div>
         </div>
@@ -337,7 +338,7 @@ function Homepage() {
 
       {/****************************************************************************** BANNER***************************************************************************** */}
 
-      <div className="bg-white justify pt-3  w-full font-poppins">
+      <div className="bg-white justify pt-3  w-full font-poppins max-[400px]:text-xs">
         <div class=" flex  bg-ban-ner w-full   justify-around items-center   ">
           <div className="flex  flex-col  items-center text-white  py-1  px-1 justify-center ">
             <div className="font-poppins lg:text-7xl md:text-4xl  sm:text-1xl  font-bold">
