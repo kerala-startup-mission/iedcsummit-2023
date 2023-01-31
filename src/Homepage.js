@@ -48,7 +48,7 @@ function Homepage() {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("Mar 03, 2023 00:00:00").getTime();
+    const countdownDate = new Date("Mar 04, 2023 09:30:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -57,7 +57,7 @@ function Homepage() {
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
       const hours = Math.floor(
-        (distance % (100 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -100,8 +100,8 @@ function Homepage() {
           </svg>
         </button>
       )}
-      <div className="bg-cover bg-center bg-[url('images/bgggg.jpg')]  bg-opacity-100">
-        <div className="bg-black bg-opacity-50 w-full h-full pb-5">
+      <div className="bg-cover bg-center bg-[url('images/bgggg.png')]  bg-opacity-100">
+        <div className="bg-black bg-opacity-75 w-full h-full pb-5 sm:h-screen">
           <nav className="w-full ">
             <div className="justify-between px-4 mx-auto lg:max-w-6xl md:items-center md:flex md:px-5  ">
               <div>
@@ -201,34 +201,29 @@ function Homepage() {
             </div>
           </nav>
 
-
-
           <div className="  ">
-
-          <div className="inline-block ">
-            <div class="pt-20 ">
-              <h1 className=" lg:text-start md:text-center sm:text-center font-poppins text-2xl text-white dark:text-white  font-poppins">
-                Asia's Largest Summit for Aspiring Entrepreneurs
-              </h1>
-            </div>
-
-            <div className=" font-poppins">
-              <h1 className="pt-2 text-5xl font-extrabold leading-none tracking-tight text-white sm:text-7xl md:text-6xl lg:text-8xl dark:text-white mx-auto inline">
-                IEDC{" "}
-                <span className="text-orange-600 dark:text-orange-600">
-                  SUMMIT
-                </span>{" "}
-                <span className="text-white">2023</span>
-              </h1>
-              <div className="text-right">
-                <h1 className="lg:text-right max-[500px]:text-sm bg-orange-600 inline-block	md:text-center sm:text-center px-3 py-2 text-xl  leading-none tracking-tight text-white  dark:text-white font-poppins">
-                  Unravelling Dimensions Uniting Perspectives{" "}
+            <div className="inline-block ">
+              <div class="pt-20 ">
+                <h1 className=" lg:text-start md:text-center sm:text-center font-poppins text-2xl text-white dark:text-white  font-poppins">
+                  Asia's Largest Summit for Aspiring Entrepreneurs
                 </h1>
               </div>
+
+              <div className=" font-poppins">
+                <h1 className="pt-2 text-5xl font-extrabold leading-none tracking-tight text-white sm:text-7xl md:text-6xl lg:text-8xl dark:text-white mx-auto inline">
+                  IEDC{" "}
+                  <span className="text-orange-600 dark:text-orange-600">
+                    SUMMIT
+                  </span>{" "}
+                  <span className="text-white">2023</span>
+                </h1>
+                <div className="text-right">
+                  <h1 className="lg:text-right max-[500px]:text-sm bg-orange-600 inline-block	md:text-center sm:text-center px-3 py-2 text-xl  leading-none tracking-tight text-white  dark:text-white font-poppins">
+                    Unravelling Dimensions Uniting Perspectives{" "}
+                  </h1>
+                </div>
+              </div>
             </div>
-
-          </div> 
-
 
             <div className="pt-10 flex justify-center font-poppins">
               <div className="">
@@ -283,7 +278,7 @@ function Homepage() {
               </button>
               <button
                 type="button"
-                className="tracking-wide w-80 h-14  sm:text-md rounded-full lg:text-lg focus:outline-none  sm:text-md font-bold px-5 lg:py-2.5 mr-2 mb-2 focus:ring-orange-900 border-white-300 dark:border-white-300 dark:text-white dark:hover:text-white dark:hover:bg-orange-600 dark:focus:ring-orange-900 font-poppins hover:text-white border border-white-600 hover:bg-orange-600 focus:ring-2 focus:outline-none focus:ring-white-300 text-center  border-white-300  border-white-300 dark:border-white-300"
+                className="tracking-wide w-80 h-14  sm:text-md rounded-full lg:text-lg focus:ring-orange-900 focus:outline-none  sm:text-md font-bold px-5 lg:py-2.5 mr-2 mb-2 focus:ring-orange-900 border-white-300 hover:bg-orange-600 border-white-300 text-white hover:text-white dark:border-white-300 dark:text-white dark:hover:text-white dark:hover:bg-orange-600 dark:focus:ring-orange-900 font-poppins hover:text-white border border-white-600 hover:bg-orange-600 focus:ring-2 focus:outline-none focus:ring-white-300 text-center  border-white-300  border-white-300 dark:border-white-300"
                 // className="font-poppins tracking-wide  sm:text-md w-80 h-14 text-white hover:text-white border border-white-600 hover:bg-orange-600 focus:ring-2 focus:outline-none focus:ring-white-300 rounded-full lg:text-lg font-bold px-10 lg:py-2.5 text-center mr-10 border-white-300 mb-10 focus:ring-orange-900 border-white-300 dark:border-white-300 dark:text-white dark:hover:text-white dark:hover:bg-orange-600 dark:focus:ring-orange-900"
               >
                 View Schedule
@@ -293,7 +288,10 @@ function Homepage() {
         </div>
 
         {/* ************************************ABOUT************************************ */}
-        <div className="lg:flex md:flex bg-white font-poppins w-full " id="section-about">
+        <div
+          className="lg:flex md:flex bg-white font-poppins w-full "
+          id="section-about"
+        >
           <div className="lg:w-1/2 lg:pt-24 pl-5 md:w-1/2 md:pl-8 sm:pl-4 md:pr-4 sm:pr-4 mr-10">
             <div className="text-center pt-5 sm:pt-0 ">
               <h1 className="font-poppins pt-1 text-3xl md:text-4xl font-extrabold md:justify-start text-gray-900 pb-4  dark:text-black ">
@@ -344,7 +342,9 @@ function Homepage() {
             <div className="font-poppins lg:text-7xl md:text-4xl  sm:text-1xl  font-bold">
               425
             </div>
-            <div className="font-poppins lg:text-xl  md:text-lg  sm:text-1xl">IEDCs</div>
+            <div className="font-poppins lg:text-xl  md:text-lg  sm:text-1xl">
+              IEDCs
+            </div>
           </div>
 
           <div className="flex flex-col  items-center text-white py-10 justify-center ">
@@ -436,9 +436,7 @@ function Homepage() {
               </li>
 
               <li>
-                <p className="font-poppins pt-5 text-white">
-                  Bergin S Russel
-                </p>
+                <p className="font-poppins pt-5 text-white">Bergin S Russel</p>
                 <p className="font-poppins text-white">
                   iedckerala@startupmission.in
                 </p>
@@ -456,23 +454,17 @@ function Homepage() {
                 <p className="font-poppins text-white">
                   Rajagiri Valley, Kakkanad
                 </p>
-                <p className="font-poppins text-white">
-                  Kochi, Kerala, 682039
-                </p>
+                <p className="font-poppins text-white">Kochi, Kerala, 682039</p>
               </li>
               <li>
-                <p className="font-poppins text-white ">
-                  For Queries
-                </p>
+                <p className="font-poppins text-white ">For Queries</p>
                 <p className="font-poppins text-white text-sm lg:text:md">
                   rsetiedc@rajagiritech.edu.in
                 </p>
               </li>
 
               <li>
-                <p className="font-poppins pt-5 text-white">
-                  Nitheesh Kurian
-                </p>
+                <p className="font-poppins pt-5 text-white">Nitheesh Kurian</p>
                 <p className="font-poppins text-white">
                   nitheeshk@rajagiritech.edu.in
                 </p>
@@ -569,7 +561,10 @@ function Homepage() {
             >
               KSUM
             </a>
-            <a href="https://rsetiedc.in/" className="font-poppins hover:text-orange-500">
+            <a
+              href="https://rsetiedc.in/"
+              className="font-poppins hover:text-orange-500"
+            >
               IEDC RSET
             </a>
             <a
