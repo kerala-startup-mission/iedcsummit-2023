@@ -8,7 +8,7 @@ import rsetiedc from "./images/rsetinnov.png";
 import rsetlogo from "./images/rset-transparent.png";
 import "./App.css";
 import "./fonts/fragile.otf";
-import SpeakerDetails from "./SpeakerDetails";
+// import SpeakerDetails from "./SpeakerDetails";
 
 function Homepage() {
   const [navbar, setNavbar] = useState(false);
