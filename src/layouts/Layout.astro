@@ -1,44 +1,175 @@
 ---
-const { title } = Astro.props;
-
-import Navbar from "../components/Navbar.astro";
-
-const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
-const url = "https://startupmission.kerala.gov.in/";
-
+	import '../styles/base.css';
 ---
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.png" />
+
+<head>
+
+    <script defer data-domain="iedcsummit.in" src="https://analytics.huddleglobal.co.in/js/plausible.js"></script>
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="/fav/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary Meta Tags -->
+   <title>IEDC summit 2023 | Kerala Startup Mission</title>
+   <meta name="title" content="IEDC summit 2023 | Kerala Startup Mission">
+   <meta name="description" content="Kerala Startup Mission is organizing the sixth edition of the flagship event IEDC Summit 2023, bringing together Student Innovators and all other connected stakeholders under one umbrella.">
+    
+   <meta name="generator" content={Astro.generator} />
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://iedcsummit.in/">
+   <meta property="og:title" content="IEDC summit 2023 | Kerala Startup Mission">
+   <meta property="og:description"
+      content="Kerala Startup Mission is organizing the sixth edition of the flagship event IEDC Summit 2023, bringing together Student Innovators and all other connected stakeholders under one umbrella.">
+   <meta property="og:image" content="iedc_fb_image.png">
+
+   <!-- Twitter -->
+   <meta property="twitter:card" content="summary_large_image">
+   <meta property="twitter:url" content="https://iedcsummit.in/">
+   <meta property="twitter:title" content="IEDC summit 2023 | Kerala Startup Mission">
+   <meta property="twitter:description"
+      content="Kerala Startup Mission is organizing the sixth edition of the flagship event IEDC Summit 2023, bringing together Student Innovators and all other connected stakeholders under one umbrella.">
+   <meta property="twitter:image" content="iedc_fb_image.png">
+
+   <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+   <link rel="manifest" href="fav/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" id="bootstrap-grid" />
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" id="bootstrap-reboot" />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/rev-settings.css" rel="stylesheet" type="text/css">
+    <link href="css/color.css" rel="stylesheet" type="text/css">
+
+    <!-- color scheme -->
+	<link rel="stylesheet" href="css/colors/blue.css" type="text/css" id="colors">
+
+    <!-- RS5.0 Stylesheet -->
+    <link rel="stylesheet" href="revolution/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="revolution/css/layers.css" type="text/css">
+    <link rel="stylesheet" href="revolution/css/navigation.css" type="text/css">
+    <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
+	
+	<!-- custom font -->
+	<link rel="stylesheet" href="css/font-style.css" type="text/css">
+</head>
+
+<body id="homepage" class="de_light">
+
+    <div id="wrapper">
+
+			<slot></slot>
 		
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-
-		<!-- Primary Meta Tags -->
-		<meta name="title" content={title} >
-		<meta name="description" content={description}>
-
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website">
-		<meta property="og:url" content={url}>
-		<meta property="og:title" content={title}>
-		<meta property="og:description" content={description}>
-		<meta property="og:image" content={url + 'img/fb_image.jpg'}>
-
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content={url}>
-		<meta property="twitter:title" content={title}>
-		<meta property="twitter:description" content={description}>
-		<meta property="twitter:image" content={url + 'img/fb_image.jpg'}>
-
-	</head>
-	<body>
-		<Navbar></Navbar>
-		<slot />
-	</body>
-</html>
+		</div>
+		<!-- 
+				
+				<div id="de-extra-wrap" class="de_light">
+						<span id="b-menu-close">
+								<span></span>
+								<span></span>
+						</span>
+						<div class="de-extra-content">
+								<h3>Information</h3>
+								<p>
+										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+								</p>
+		
+								<div class="spacer10"></div>
+								
+								<div class="p-4 border">
+										<div class="text-center">
+												<h1>485 of 1000</h1>
+											 <p>Seats available</p>
+												<a href="#section-ticket" class="btn-custom btn-fullwidth text-white scroll-to">Get Your Ticket</a>
+										</div>
+								</div>
+		
+								<div class="spacer-single"></div>
+		
+								<h3>Where &amp; When?</h3>
+								<div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-calendar-check-o id-color"></i>June 20th to 25th</div>
+								<div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-map-marker id-color"></i>Palo Alto, California</div>
+								<div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-phone id-color"></i>1 200 300 9000</div>
+								<div class="h6 padding10 pt0 pb0"><i class="i_h3 fa fa-envelope-o id-color"></i>info@exhibiztheme.com</div>
+						</div>
+				</div>
+				<div id="de-overlay"></div> -->
+		
+				<!-- Javascript Files
+				================================================== -->
+				<script is:global src="js/plugins.js"></script>
+				<script is:global src="js/designesia.js"></script>
+				<script is:global src="js/validation.js"></script>
+				<script is:global src="js/countdown-custom.js"></script>
+		
+				<!-- RS5.0 Core JS Files -->
+				<script is:global src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+				<script is:global src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+		
+				<!-- RS5.0 Extensions Files -->
+				<script is:global src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+				<script is:global src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+		
+				<script is:global>
+						jQuery(document).ready(function() {
+								// revolution slider
+								jQuery("#slider-revolution").revolution({
+										sliderType: "standard",
+										sliderLayout: "fullwidth",
+										fullScreen:"on",
+										delay: 5000,
+										navigation: {
+												arrows: {
+														enable: true
+												},
+												bullets: {
+														enable: false,
+														style: 'hermes'
+												},
+		
+										},
+										parallax: {
+												type: "mouse",
+												origo: "slidercenter",
+												speed: 2000,
+												levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+										},
+										spinner: "off",
+										gridwidth: 1140,
+										gridheight: window.innerHeight,
+										disableProgressBar: "on"
+								});
+						});
+				</script>
+			
+			</body>
+		
+		</html>
