@@ -326,7 +326,6 @@ import Layout from "../layouts/Layout.astro";
                         </div>
                     </section>
                     
-                                  
                     <section>
                          
                     </section>
@@ -627,65 +626,104 @@ import Layout from "../layouts/Layout.astro";
                         </div>
                     </section>
 
-
-         
            
             <!-- logo carousel section close -->
-            <section id="section-precursor" class="no-top no-bottom" aria-label="section" style="background-size: cover;">
-                <div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">perspectives</div>                    
-                <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                <h1 class="text-5xl">Precursor Events</h1>
-                <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                <div class="spacer-single"></div>
-                </div>
-                <div class="flex px-4 justify-evenly wow fadeInUp">
-                <div class="max-w-md rounded overflow-hidden shadow-lg">
-                    <img
-                    class="w-full"
-                    src="images/cycle.jpeg"
-                    alt="Sunset in the mountains"
-                    />
-                    <div class="px-6 py-4">
-                    <div class="font-bold text-2xl mb-2">Cyclothon</div>
-                    <p class="text-gray-700 text-base">
-                        IEDC SUMMIT 2023 Cyclothon is a precursor event for SUMMIT 2023 that aims to promote ways to reduce carbon footprint by encouraging citizens to choose greener ways of commute. 
+
+                            <section id="section-precursor" class="no-top no-bottom" aria-label="section" style="background-size: cover;">
+                    <div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">Events</div>                    
+                    <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                    <h1 class="text-5xl">Precursor Events</h1>
+                    <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                    <div class="spacer-single"></div>
+                    </div>
+                    <div class="flex px-4 justify-evenly wow fadeInUp">
+                    <div class="max-w-md rounded overflow-hidden shadow-lg">
+                        <img
+                        class="w-full"
+                        src="images/cycle.jpeg"
+                        alt="Sunset in the mountains"
+                        />
+                        <div class="px-6 py-4">
+                        <div class="font-bold text-2xl mb-2">Cyclothon</div>
+                        <p class="text-gray-700 text-base">
+                            IEDC SUMMIT 2023 Cyclothon is a precursor event for SUMMIT 2023 that aims to promote ways to reduce carbon footprint by encouraging citizens to choose greener ways of commute. 
 IEDC SUMMIT 2023 Cyclothon: "Spin for Sustainability" appeals to you to join us and pedal for a safer and greener tomorrow!!
-                    </p>
+                        </p>
+                        <div class="items-center d-flex center justify-center pt-1 pb-1 ">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="bg-blue-500 text-white mb-3 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                             id="reg"    
+                        >
+                            Register
+                        </button>
+                        </div>
+                        </div>
+                        
                     </div>
-                    <div class="items-center d-flex center justify-center pt-1 pb-1 ">
-                    <button
-                        class="bg-blue-500 text-white mb-3 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                         onclick="popup('iedc-summit-2023-230400');"    
-                    >
-                        Register
-                    </button>
+                    
+                   <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                        <img
+                        class="w-full"
+                        src="images/bg-rset.jpg"
+                        alt="Sunset in the mountains"
+                        />
+                        <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Women</div>
+                        <p class="text-gray-700 text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                            exercitationem praesentium nihil.
+                        </p>
+                        </div>
+                        <div class="px-6 pt-2 z-auto justify-right">
+                        <button 
+                            class="bg-blue-600 relative z-auto text-white mb-3 hover:bg-blue-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                        >
+                            Register
+                        </button>
+                        </div>
+                    </div>-->
                     </div>
-                </div>
-               <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img
-                    class="w-full"
-                    src="images/bg-rset.jpg"
-                    alt="Sunset in the mountains"
-                    />
-                    <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Women</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                        exercitationem praesentium nihil.
-                    </p>
+                </section>
+
+                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog relative w-auto pointer-events-none">
+                        <div
+                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                        <div
+                            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md">
+                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Register for Cyclothon</h5>
+                            
+                        </div>
+                        <div class="modal-body relative p-2">
+                            <iframe class="w-full" height="415" src="https://www.yepdesk.com/embed/open-register/63da8f03c9e77c000166e70b/vmkkcra385"></iframe>
+                        </div>
+                        <div
+                            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md">
+                            <button type="button" class="px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out" data-bs-dismiss="modal">Close</button>
+                           
+                        </div>
+                        </div>
                     </div>
-                    <div class="px-6 pt-4 pb-2 justify-right">
-                    <button
-                        class="bg-blue-600 text-white mb-3 hover:bg-blue-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                    >
-                        Register
-                    </button>
                     </div>
-                </div>-->
-                </div>
-            </section>
-            <section>
+            
+                        <section>
 			<div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">pastevents</div>
             </section>
 			<section id="section-fun-facts" class="jarallax text-light">
