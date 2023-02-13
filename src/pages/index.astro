@@ -1367,23 +1367,179 @@ import Layout from "../layouts/Layout.astro";
       >
         <div class="wm wm-border light wow fadeInDown">reachus</div>
         <div class="container-xl">
-          <div class="row align-items-center">
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-              <p class="text-3xl">Reach us</p>
-              <h2 class="text-5xl" style="color:rgb(8, 8, 120)">
-                Get Directions to the Event
-              </h2>
-              <p class="pt-3">
-                Rajagiri School of Engineering & Technology<br />Rajagiri Valley
-                Rd, Rajagiri Valley,<br />Kakkanad, Kerala 682039
-              </p>
+          <div class="row wow fadeInLeft" data-wow-delay="0s">
+            <p class="text-3xl">Reach us</p>
+            <h2 class="text-5xl" style="color:rgb(8, 8, 120)">
+              Get Directions to the Event
+            </h2>
 
-              <div class="spacer10"></div>
+            <div class="col-sm">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#aluva"
+                    type="button"
+                    role="tab"
+                    aria-controls="aluva"
+                    aria-selected="true">Aluva</button
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#north"
+                    type="button"
+                    role="tab"
+                    aria-controls="north"
+                    aria-selected="false">North</button
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#south"
+                    type="button"
+                    role="tab"
+                    aria-controls="south"
+                    aria-selected="false">South</button
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="vytila-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#vytila"
+                    type="button"
+                    role="tab"
+                    aria-controls="vytilla"
+                    aria-selected="false">Vytilla</button
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="muvatapuzha-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#muvatapuzha"
+                    type="button"
+                    role="tab"
+                    aria-controls="muvatapuzha"
+                    aria-selected="false">Muvatapuzha</button
+                  >
+                </li>
+              </ul>
 
-              <!-- <a href="#" class="btn-custom font-weight-bold text-white sm-mb-30">About Us</a> -->
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="aluva"
+                  role="tabpanel"
+                  aria-labelledby="aluva-tab"
+                >
+                  <h2>Aluva Railway Station to RSET</h2>
+                  <h3>Route 1</h3>
+                  <h4 class="text-primary">Via Bus</h4>
+                  <p>
+                    Aluva Railway Station- Aluva KSRTC bus stop (Board
+                    Tripunitura bus) - Kalamasherry HMT Junction-Kakkanad -
+                    Chitethukara - Rajagiri stop (Final Stop)-RSET
+                  </p>
+                  <h3>Route 2</h3>
+                  <h4 class="text-primary">Via Metro</h4>
+                  <p>
+                    Aluva Railway Station-Aluva Metro Station-Palarivattom(Metro
+                    final stop)-Palarivattom Junction(Board Kakkanad
+                    Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET
+                  </p>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="north"
+                  role="tabpanel"
+                  aria-labelledby="north-tab"
+                >
+                  <h2>North Railway Station to RSET</h2>
+                  <h3>Route 1</h3>
+                  <h4 class="text-primary">Via Bus</h4>
+                  <p>
+                    North Railway Station-Ernakulam Town hall-Kaloor-JLN
+                    Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri
+                    stop(Final Stop)-RSET
+                  </p>
+                  <h3>Route 2</h3>
+                  <h4 class="text-primary">Via Metro</h4>
+                  <p>
+                    North Railway Station-Townhall Metro Station
+                    -Palarivattom(Metro final stop)- Palarivattom Junction(Board
+                    Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final
+                    Stop)-RSET
+                  </p>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="south"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <h2>South Railway Station to RSET</h2>
+                  <h3>Route 1</h3>
+                  <h4 class="text-primary">Via Bus</h4>
+                  <p>
+                    South Railway Station-South Bus Stand-MG Road-Kaloor-JLN
+                    Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop
+                    -RSET
+                  </p>
+                  <h3>Route 2</h3>
+                  <h4 class="text-primary">Via Metro</h4>
+                  <p>
+                    Ernakulam South Railway Station- Ernakulam South Metro
+                    Station-Palarivattom(Metro final stop)- Palarivattom
+                    Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri
+                    stop (Final Stop)-RSET
+                  </p>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="vytila"
+                  role="tabpanel"
+                  aria-labelledby="vytila-tab"
+                >
+                  <h2>Vytilla Hub to RSET</h2>
+                  <p>
+                    Vytilla Hub-Tripunitura-Karingchira
+                    Junction-Irumpanam-Chittethukara-Rajagiri Stop(Final
+                    Stop)-RSET
+                  </p>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="muvatapuzha"
+                  role="tabpanel"
+                  aria-labelledby="muvatapuzha-tab"
+                >
+                  <h2>Muvatupuzha to RSET</h2>
+                  <p>
+                    Muvatupuzha -Kolencherry- Puthencruz -Thiruvankulam-
+                    Karingchira Junction-Irumpanam-Chittethukara-Rajagiri
+                    Stop(Final Stop)-RSET
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+            <div class="mb-sm-30 col-sm text-center wow fadeInRight">
               <div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.283066703128!2d76.3580909!3d9.9934604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20Of%20Engineering%20%26%20Technology%20Kakkanad!5e0!3m2!1sen!2sin!4v1675339967680!5m2!1sen!2sin"
