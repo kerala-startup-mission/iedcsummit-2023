@@ -111,9 +111,18 @@ import Layout from "../layouts/Layout.astro";
 
 
                     <!-- Popup -->
-
-                    <div id="popup" class=" md:flex static fixed bottom-1 right-1 rounded-lg ">
-                    <button id="close-button">X</button>
+                    
+                    
+                    <div id="popup" class=" md:flex static fixed bottom-1 right-1 rounded-lg mb-3 mr-5 ">
+                        
+                        <div id="close-button" class=" inline-block cursor-pointer absolute -top-3 -left-3  w-6 h-6 bg-gray-800  rounded-full text-white flex items-center justify-center" data-home-popup-close="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x w-4 h-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                              <line x1="18" y1="6" x2="6" y2="18"></line>
+                              <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <!-- <button id="close-button">X</button> -->
                     <div class=" w-64 max-w-lg  md:h-auto">
                         <div class="bg-white rounded-lg shadow ">
                         <a href="#section-joinus">
@@ -696,6 +705,121 @@ import Layout from "../layouts/Layout.astro";
                         </div>
                     </section>
 
+            <!-- Section Begin -->
+
+            <section id="section-speakers" class="jarallax text-light">
+                <img src="images/bg/1.jpg" class="jarallax-img" alt="">
+				<div class="wm wm-border dark wow fadeInDown">speakers</div>
+                <div class="container">
+                    <div class="row">
+						<div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                            <h1>The Speakers</h1>
+                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                            <div class="spacer-single"></div>
+                        </div>
+						
+						<div class="clearfix"></div>
+                      
+                       <div class="col-lg-3 col-md-6">
+							<!-- team member -->
+							<div class="de-team-list">
+								<div class="team-pic">
+									<img src="images/team/1.jpg" class="img-responsive img-rounded" alt="" />
+								</div>
+								<div class="team-desc img-rounded">
+									<h3>John Smith</h3>
+									<p class="lead">Expert Designer</p>
+									<div class="small-border"></div>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+
+									<div class="social">
+										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
+									</div>
+								</div>
+							</div>
+							<!-- team close -->
+						</div>
+						
+						<div class="col-lg-3 col-md-6">
+							<!-- team member -->
+							<div class="de-team-list">
+								<div class="team-pic">
+									<img src="images/team/2.jpg" class="img-responsive img-rounded" alt="" />
+								</div>
+								<div class="team-desc img-rounded">
+									<h3>Michael Dennis</h3>
+									<p class="lead">Expert Designer</p>
+									<div class="small-border"></div>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+
+									<div class="social">
+										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
+									</div>
+								</div>
+							</div>
+							<!-- team close -->
+						</div>
+						
+						<div class="col-lg-3 col-md-6">
+							<!-- team member -->
+							<div class="de-team-list">
+								<div class="team-pic">
+									<img src="images/team/3.jpg" class="img-responsive img-rounded" alt="" />
+								</div>
+								<div class="team-desc img-rounded">
+									<h3>Sarah Michelle</h3>
+									<p class="lead">Expert Designer</p>
+									<div class="small-border"></div>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+
+									<div class="social">
+										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
+									</div>
+								</div>
+							</div>
+							<!-- team close -->
+						</div>
+						
+						<div class="col-lg-3 col-md-6">
+							<!-- team member -->
+							<div class="de-team-list">
+								<div class="team-pic ">
+									<img src="images/team/4.jpg" class="img-responsive img-rounded" alt="" />
+								</div>
+								<div class="team-desc img-rounded">
+									<h3>Katty Wilson</h3>
+									<p class="lead">Expert Designer</p>
+									<div class="small-border"></div>
+									<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+
+									<div class="social">
+										<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+										<a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+										<a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+										<a href="#"><i class="fa fa-skype fa-lg"></i></a>
+									</div>
+								</div>
+							</div>
+							<!-- team close -->
+						</div>
+
+						<div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </section>
+
+
+<!-- Section close -->
 
          
            
@@ -845,6 +969,12 @@ IEDC SUMMIT 2023 Cyclothon: "Spin for Sustainability" appeals to you to join us 
             <section>
 			<div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">pastevents</div>
             </section>
+
+
+
+
+
+
 			<section id="section-fun-facts" class="jarallax text-light">
                 
                 <img src="images/bg/iluviedcbg2.png" class="jarallax-img" alt="">
