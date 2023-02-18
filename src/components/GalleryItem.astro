@@ -1,0 +1,18 @@
+---
+const { label, image } = Astro.props;
+---
+
+<!-- gallery item -->
+<div class="item residential" style="background-size: cover; position: absolute; left: 0px; top: 0px;">
+  <div class="picframe" style="background-size: cover;">
+      <a href="#" title="View Details">
+          <span class="overlay" style="opacity: 0; width: 367px; height: 244px;">
+              <span class="pf_text" style="margin-top: 82px;">
+                  <span class="project-name">{label}</span>
+              </span>
+          </span>
+          <img src={image} alt="">
+      </a>
+  </div>
+</div>
+<!-- close gallery item -->
