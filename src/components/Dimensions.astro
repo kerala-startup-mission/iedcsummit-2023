@@ -1,0 +1,52 @@
+---
+import GalleryItem from "./GalleryItem.astro";
+let photos = [
+    {
+        "label":"Expert Speakers",
+        "image":"images/portfolio/es.jpg"
+    },
+    {
+        "label":"Panel Discussions",
+        "image":"images/portfolio/pd.jpg"
+    },
+    {
+        "label":"Master Classes",
+        "image":"images/portfolio/mc.jpg"
+    },
+    {
+        "label":"Workshops",
+        "image":"images/portfolio/ws.jpg"
+    },
+    {
+        "label":"Experience Zones",
+        "image":"images/portfolio/ez.jpg"
+    },
+    {
+        "label":"Investor Connect",
+        "image":"images/portfolio/ic.jpg"
+    },
+    {
+        "label":"Mentorship Support",
+        "image":"images/portfolio/ms.jpg"
+    },
+    {
+        "label":"Nodal Officers Training",
+        "image":"images/portfolio/no.jpg"
+    },
+];
+---
+<section id="section-portfolio" class="no-top no-bottom" aria-label="section" style="background-size: cover;">
+  <div class="wm wm-border light wow fadeInDown">dimensions</div>
+  <div class="row">
+      <div class="container">
+        <h2>Explore the dimensions</h2>
+      </div>
+  </div>            
+  <div id="gallery" class="gallery zoom-gallery full-gallery de-gallery pf_full_width wow fadeInUp animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp; background-size: cover; position: relative; height: 152.35px;">
+    {
+        photos.map((item) => (
+            <GalleryItem {...item} />
+        ))
+    }
+  </div>             
+</section>     

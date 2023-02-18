@@ -2,15 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import TopNav from "../components/TopNav.astro";
 import Slider from "../components/Slider.astro";
+import Stats from "../components/Stats.astro";
+import Dimensions from "../components/Dimensions.astro";
+import Events from "../components/Events.astro";
+import Speakers from "../components/Speakers.astro";
 ---
 <Layout>
             
-    <TopNav/>
+  <TopNav/>
 
-        <!-- content begin -->
-        <div id="content" class="no-bottom no-top ">
+		<!-- content begin -->
+		<div id="content" class="no-bottom no-top ">
 
-            <Slider/>
+      <Slider/>
 			
 			<section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
 				<div class="container">
@@ -24,1458 +28,549 @@ import Slider from "../components/Slider.astro";
 			</section>
 			
 			<section id="section-about" data-bgimage="url(images/bg/4.png) top left no-repeat">
-				<div class="wm wm-border light wow fadeInDown">IEDCSummit</div>
-                <div class="container-xl">
-                    <div class="row align-items-center">
-                        
-                        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-                            <h2 class="text-5xl " >Welcome to the Asia's<br>largest Summit for aspiring entrepreneurs</h2>
-                            <p>Kerala Startup Mission is organizing the seventh edition of the flagship event- IEDC Summit 2023 and, Rajagiri School of Engineering and Technology, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs. </p>
-                            <p>IEDC Summit is an amalgamation of events from a plethora of domains, including technology, entrepreneurship, skill development, and so much more. It facilitates as a platform for connecting student innovators, industry leaders, and various startups in addition to providing an opportunity for them to engage and network, and form connections that lasts for a lifetime. Meet highly influential entrepreneurs, imbibe from panel discussions, expand your horizons in technical knowledge and financial literacy.</p>
-                            <p><b>Let's unravel dimensions and unite perspectives together! </b></p>
-                            
-                            <div class="spacer10"></div>
-                            
-                            <!-- <a href="#" class="btn-custom font-weight-bold text-white sm-mb-30">About Us</a> -->
-                        </div>
-                        
-                        <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
-                            <div class="de-images">
-                                <img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images/misc/about.png" alt="" />
-                            </div>
-                        </div>
+				<div class="wm wm-border light wow fadeInDown">IEDC</div>
 
-                    </div>
-                </div>
-            </section>
+				<div class="container-xl">
+					<div class="row align-items-center">
+							
+						<div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
+							<h2 class="text-4xl " >Welcome to the Asia's<br>largest Summit for aspiring student entrepreneurs</h2>
+							<p>Kerala Startup Mission is organizing the seventh edition of the flagship event- IEDC Summit 2023 and, Rajagiri School of Engineering and Technology, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs. </p>
+							<p>IEDC Summit is an amalgamation of events from a plethora of domains, including technology, entrepreneurship, skill development, and so much more. It facilitates as a platform for connecting student innovators, industry leaders, and various startups in addition to providing an opportunity for them to engage and network, and form connections that lasts for a lifetime. Meet highly influential entrepreneurs, imbibe from panel discussions, expand your horizons in technical knowledge and financial literacy.</p>
+							<p><b>Let's unravel dimensions and unite perspectives together! </b></p>
+							<div class="spacer10"></div>
+						</div>
 
-                 
+						<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+							<div class="de-images">
+								<img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images/misc/about.png" alt="" />				
+							</div>
+						</div>
+					
+					</div>
+				</div>
 
-            <section id="call-to-action" class="gradient-to-right text-light call-to-action pt-0 pb-0" aria-label="cta" style="background-size: cover;">
-                <div class="container" style="background-size: cover;">
-                    <div class="row flex">
-                        <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
-                                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
-                                </svg>
-                                <h3>14</h3>
-                                <span class="text-white">Districts</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2  col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count" >
-                                <i class="icon_id-2 id-color-1"></i>
-                                <h3>425</h3>
-                                <span class="text-white">IEDCs</span>
-                            </div>
-                        </div>
+				<div class="wm wm-border light wow fadeInDown">summit</div>
+    	</section>
 
-                        <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
-                                    </svg>
-                                <h3>5000+</h3>
-                                <span class="text-white">Activities</span>
-                            </div>
-                        </div>
+      <Stats/>
 
-                        <div class="col-md-2 d-flex justify-center  col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-lightbulb d-flex" viewBox="0 0 16 16">
-                                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-                                    </svg>
-                                <h3>50000+</h3>
-                                <span class="text-white">Innovators</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="d-flex bi bi-people-fill" viewBox="0 0 16 16">
-                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                    </svg>
-                                <h3>8000+</h3>
-                                <span class="text-white">Changemakers</span>
-                            </div>
-                        </div>                           
-
-                        <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-rocket " viewBox="0 0 16 16">
-                                    <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8Z"/>
-                                    <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.495 3.495 0 0 0-.463-.315A2.19 2.19 0 0 0 8.25.064.546.546 0 0 0 8 0a.549.549 0 0 0-.266.073 2.312 2.312 0 0 0-.142.08 3.67 3.67 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635.85 0 1.7-.207 2.4-.635.067.03.132.056.196.083.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562l-1.499-1.83ZM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935L12 10.445ZM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199ZM8.009 1.073c.063.04.14.094.226.163.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13c-.781 0-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32.09-.076.17-.135.236-.18Z"/>
-                                    <path d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"/>
-                                    </svg>
-                                <h3>300+</h3>
-                                <span class="text-white">Startups</span>
-                            </div>
-                        </div>                           
-                        
-
-                        
-                    </div>
-                </div>
-            </section>	
-
-
-                
-
-
-
-
-                <section id="section-about" data-bgimage="url(images/bg/4) top left no-repeat" style="background: url(&quot;images/bg/4&quot;) left top / cover no-repeat;">
-                    <div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">Unravelling</div>
-                        <div class="container" style="background-size: cover;">
-                            <div class="row align-items-center" style="background-size: cover;">
-                                
-                                <div class="col-lg-6 wow fadeInLeft animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInLeft; background-size: cover; opacity: 0;">
-                                    <div class="row">
-                                    <h2>Unravel IEDC Summit</h2>
-                                    </div>
-                                    <div class="row">
-                                    <div class="col-lg-6 wow fadeIn animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;">
-                                        <div class="box-number square" style="background-size: cover;">
-                                           <i class="bg-color hover-color-2 fa fa-microphone text-light"></i>
-                                            <div class="text" style="background-size: cover;">
-                                                <h3><span>Express</span></h3>
-                                                <ul>
-                                                    <li>Idea Pitching</li>
-                                                    <li>Product Showcase</li>
-                                                    <li>Flea Market</li>
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="col-lg-6 wow fadeIn animated" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;">
-                                        <div class="box-number square" style="background-size: cover;">
-                                            <i class="bg-color hover-color-2 fa fa-lightbulb-o text-light"></i>
-                                            <div class="text" style="background-size: cover;">
-                                                <h3><span>Experiment</span></h3>
-                                                
-                                                    <ul>
-                                                        <li>Hackathons</li>
-                                                        <li>Ideathons</li>
-                                                        <li>Challenges</li>
-                                                        
-                                                    </ul>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 wow fadeIn animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;">
-                                        <div class="box-number square" style="background-size: cover;">
-                                            <i class="bg-color hover-color-2 fa fa-sitemap text-light"></i>
-                                            <div class="text" style="background-size: cover;">
-                                                <h3><span>Explore</span></h3>
-                                                <ul>
-                                                    <li>Masterclasses</li>
-                                                    <li>Workshops</li>
-                                                    <li>Communities</li>
-                                                    <li>Mentor Clinics</li>
-                                                    <li>Investor Connects</li>
-        
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    
-            
-                                    <div class="col-lg-4 wow fadeIn animated" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;">
-                                        <div class="box-number square" style="background-size: cover;">
-                                            <i class="bg-color hover-color-2 fa fa-building text-light"></i>
-                                            <div class="text" style="background-size: cover;">
-                                                <h3><span>Experience</span></h3>
-                                                <ul>
-                                                    <li>Experience Zones</li>
-                                                    <li>Networking</li>
-                                                    <li>Industries</li>
-                                                    <li>Corporates</li>
-                                                    <li>Government</li>
-        
-                                                    
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    </div>
-                                    
-                                    <div class="spacer10" style="background-size: cover;"></div>                                  
-                                    
-                                </div>
-                                
-                                <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight; background-size: cover; opacity: 0;">
-                                    <div class="de-images" style="background-size: cover;">
-                                        <!--<img class="di-small wow fadeIn animated" src="images/sjcet1.jpg" alt="" style="visibility: visible; animation-name: fadeIn; opacity: 0;">-->
-                                        <img class="di-small-2" src="images/ajce1.jpg" alt="">
-                                        <img class="img-fluid wow fadeInRight animated" data-wow-delay=".25s" src="images/sjcet4.jpg" alt="" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight; opacity: 0;">
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </section>
-                    
-                   
-                   
-                    <section>
-                         
-                    </section>
-                    <section id="section-portfolio" class="no-top no-bottom" aria-label="section" style="background-size: cover;">
-                        <div class="wm wm-border light wow fadeInDown">dimensions</div>
-                        <div class="row">
-                            <div class="container">
-                            <h2>Explore the dimensions</h2>
-                            </div>
-                        </div>            
-                        <div id="gallery" class="gallery zoom-gallery full-gallery de-gallery pf_full_width wow fadeInUp animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp; background-size: cover; position: relative; height: 152.35px;">
-        
-                            <!-- gallery item -->
-                            <div class="item residential" style="background-size: cover; position: absolute; left: 0px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="#" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 367px; height: 244px;">
-                                            <span class="pf_text" style="margin-top: 82px;">
-                                                <span class="project-name">Expert Speakers</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/es.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-        
-                            <!-- gallery item -->
-                            <div class="item hospitaly" style="background-size: cover; position: absolute; left: 228px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="#" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 229px; height: 152px;">
-                                            <span class="pf_text" style="margin-top: 36px;">
-                                                <span class="project-name">Panel Discussions</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/pd.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-        
-                            <!-- gallery item -->
-                            <div class="item hospitaly" style="background-size: cover; position: absolute; left: 457px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="images/portfolio/mc.jpg" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 229px; height: 152px;">
-                                            <span class="pf_text" style="margin-top: 36px;">
-                                                <span class="project-name">Master Classes</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/mc.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-        
-                            <!-- gallery item -->
-                            <div class="item residential" style="background-size: cover; position: absolute; left: 686px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="images/portfolio/ws.jpg" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 229px; height: 152px;">
-                                            <span class="pf_text" style="margin-top: 36px;">
-                                                <span class="project-name">Workshops</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/ws.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-                        
-                            <!-- gallery item -->
-                            <div class="item residential" style="background-size: cover; position: absolute; left: 0px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="images/portfolio/ez.jpg" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 367px; height: 244px;">
-                                            <span class="pf_text" style="margin-top: 82px;">
-                                                <span class="project-name">Experience Zones</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/ez.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-        
-                            <!-- gallery item -->
-                            <div class="item hospitaly" style="background-size: cover; position: absolute; left: 228px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="images/portfolio/ic.jpg" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 229px; height: 152px;">
-                                            <span class="pf_text" style="margin-top: 36px;">
-                                                <span class="project-name">Investor Connect</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/ic.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-        
-                            <!-- gallery item -->
-                            <div class="item hospitaly" style="background-size: cover; position: absolute; left: 457px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="images/portfolio/ms.jpg" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 229px; height: 152px;">
-                                            <span class="pf_text" style="margin-top: 36px;">
-                                                <span class="project-name">Mentorship Support</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/ms.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-        
-                            <!-- gallery item -->
-                            <div class="item residential" style="background-size: cover; position: absolute; left: 686px; top: 0px;">
-                                <div class="picframe" style="background-size: cover;">
-                                    <a href="images/portfolio/no.jpg" title="View Details">
-                                        <span class="overlay" style="opacity: 0; width: 229px; height: 152px;">
-                                            <span class="pf_text" style="margin-top: 36px;">
-                                                <span class="project-name">Nodal Officers Training</span>
-                                            </span>
-                                        </span>
-                                        <img src="images/portfolio/no.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- close gallery item -->
-                        </div>             
-                    </section>
-
-
-                    <section id="section-features" style="background-size: cover;">
-                        <div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">uniting</div>
-                        <div class="container" style="background-size: cover;">
-                            <div class="row" style="background-size: cover;">
-                                <div class="col-md-6 offset-md-3 text-center wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                    <h1>Join us</h1>
-                                    <div class="separator" style="background-size: cover;"><span><i class="fa fa-square"></i></span></div>
-                                    <div class="spacer-single" style="background-size: cover;"></div>
-                                </div>
-        
-        
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                       <i class="bg-color hover-color-2 fa fa-graduation-cap text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Students</span></h3>
-                                            <p>Young innovators of the state who wish to pursue their dream of developing a product and building their startups</p>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-briefcase text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Faculty</span></h3>
-                                            <p>Changemakers enabling the innovators of the state to pursue their dreams and suppliment them with the necessary skills </p>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-user text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Interested individuals</span></h3>
-                                            <p>Any interested personnel with an innovative mindset and interest could attend the IEDC Summit 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-building text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Corporates</span></h3>
-                                            <p>Opening up the corporate doors and problem statements to the students will bring out innovative solutions</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-cog text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Industry</span></h3>
-                                            <p>Exposure to industry plays a major role in development of a knowledge economy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                
-        
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-users text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Community</span></h3>
-                                            <p>The right place to interact with students and advocate your cause, the venue will be a great platform 
-                                                to elevate your community and take it to the next level.</p>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2  fa fa-rocket text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Startups</span></h3>
-                                            <p>Engagement and interaction of startups with the academia will motivate more students to pursue their dreams and transalate to new startups</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-money text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Investors</span></h3>
-                                            <p>The spotlight for the investors to find the best idea and invest in them</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-handshake-o text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Mentors</span></h3>
-                                            <p>Guiding the young innovators and giving them a helping hand in the right direction will give rise to future unicorns</p>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="col-lg-4 wow fadeIn animated" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-                                    <div class="box-number square" style="background-size: cover;">
-                                        <i class="bg-color hover-color-2 fa fa-bank text-light"></i>
-                                        <div class="text" style="background-size: cover;">
-                                            <h3><span>Government Departments</span></h3>
-                                            <p>The best venue for the Government departments that wishes to engage with the aspiring entrepreneurs</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="spacer-single sm-hide" style="background-size: cover;"></div>
-                                
-        
-                            </div>
-                        </div>
-                    </section>
-
-
-                   <!--<section id="section-ticket" class="jarallax text-light" style="position: relative; z-index: 0; background-size: cover;">
-                
-                <div class="wm wm-border dark wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">uniting</div>
+			<section id="section-about" data-bgimage="url(images/bg/4) top left no-repeat" style="background: url(&quot;images/bg/4&quot;) left top / cover no-repeat;">
+				<div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">unravelling</div>
 				<div class="container" style="background-size: cover;">
-                    <div class="row" style="background-size: cover;">
-						<div class="col-md-6 offset-md-3 text-center wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                            <h1>Lets come together</h1>
-                            <div class="separator" style="background-size: cover;"><span><i class="fa fa-square"></i></span></div>
-                            <div class="spacer-single" style="background-size: cover;"></div>
-                        </div>
+					<div class="row align-items-center" style="background-size: cover;">
+						<div class="col-lg-6 wow fadeInLeft animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInLeft; background-size: cover; opacity: 0;">
+							<div class="row">
+								<h2>Unravel IEDC Summit</h2>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 wow fadeIn animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;">
+										<div class="box-number square" style="background-size: cover;">
+												<i class="bg-color hover-color-2 fa fa-microphone text-light"></i>
+												<div class="text" style="background-size: cover;">
+														<h3><span>Express</span></h3>
+														<ul>
+																<li>Idea Pitching</li>
+																<li>Product Showcase</li>
+																<li>Flea Market</li>
+																
+														</ul>
+												</div>
+										</div>
+								</div>
 
-                        
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Tickets Open</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Students</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Tickets Open</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Faculty Members</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Tickets Open</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Interested individuals</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Tickets Open</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Community</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Tickets Open</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Startups</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Tickets Open</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Government Departments</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;"></div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Startups</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" style="background-size: cover;">
-                            <div class="pricing-s1 mb30 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                                <div class="ribbon color-2 text-white" style="background-size: cover;">Corporates</div>
-                                <div class="top" style="background-size: cover;">
-                                    <h2>Startups</h2>
-                                    <p class="price"><span class="currency id-color">₹</span> <b>500</b></p>
-                                </div>
-                               <div class="bottom" style="background-size: cover;">
-                                    <ul>
-                                        <li><i class="icon_check_alt2"></i>Access to IEDC Summit 2023</li>
-                                        <li><i class="icon_check_alt2"></i>Attend workshops, master classes and panel discussions <small>Preregistation shall be neded for some</small></li>
-                                        <li><i class="icon_check_alt2"></i>Engage with communities</li>
-                                        <li><i class="icon_check_alt2"></i>Engage with statups</li>
-                                        <li><i class="icon_check_alt2"></i>Access to cultural events</li>
-                                        <li><i class="icon_check_alt2"></i>Morning refreshments, lunch evening tea & snacks included</li>
-                                    </ul>
-                                    <a href="" class="btn btn-custom text-white">Buy Ticket</a>
-                                </div>
-								<div class="ps1-deco" style="background-size: cover;"></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; 
-            z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%); background-size: cover;"><img src="images/bg/10.jpg" class="jarallax-img" 
-            alt="" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 918.4px; height: 1243.3px; 
-            overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -248.65px; 
-            transform: translate3d(0px, -13.8813px, 0px);"></div></section>-->
+								<div class="col-lg-6 wow fadeIn animated" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;">
+										<div class="box-number square" style="background-size: cover;">
+												<i class="bg-color hover-color-2 fa fa-lightbulb-o text-light"></i>
+												<div class="text" style="background-size: cover;">
+														<h3><span>Experiment</span></h3>
+														
+																<ul>
+																		<li>Hackathons</li>
+																		<li>Ideathons</li>
+																		<li>Challenges</li>
+																		
+																</ul>
+														
+												</div>
+										</div>
+								</div>
+								<div class="col-lg-6 wow fadeIn animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;">
+										<div class="box-number square" style="background-size: cover;">
+												<i class="bg-color hover-color-2 fa fa-sitemap text-light"></i>
+												<div class="text" style="background-size: cover;">
+														<h3><span>Explore</span></h3>
+														<ul>
+																<li>Masterclasses</li>
+																<li>Workshops</li>
+																<li>Communities</li>
+																<li>Mentor Clinics</li>
+																<li>Investor Connects</li>
 
+																
+														</ul>
+												</div>
+										</div>
+								</div>
 
+								
 
+								<div class="col-lg-4 wow fadeIn animated" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;">
+										<div class="box-number square" style="background-size: cover;">
+												<i class="bg-color hover-color-2 fa fa-building text-light"></i>
+												<div class="text" style="background-size: cover;">
+														<h3><span>Experience</span></h3>
+														<ul>
+																<li>Experience Zones</li>
+																<li>Networking</li>
+																<li>Industries</li>
+																<li>Corporates</li>
+																<li>Government</li>
 
+																
+														</ul>
+												</div>
+										</div>
+								</div> 
+							</div>
+								
+							<div class="spacer10" style="background-size: cover;"></div>                                  
+								
+						</div>
+						
+						<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight; background-size: cover; opacity: 0;">
+							<div class="de-images" style="background-size: cover;">
+									<!--<img class="di-small wow fadeIn animated" src="images/sjcet1.jpg" alt="" style="visibility: visible; animation-name: fadeIn; opacity: 0;">-->
+									<img class="di-small-2" src="images/ajce1.jpg" alt="">
+									<img class="img-fluid wow fadeInRight animated" data-wow-delay=".25s" src="images/sjcet4.jpg" alt="" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight; opacity: 0;">
+							</div>
+						</div>
 
-             <!--<section id="section-sponsors" data-bgimage="url(images/bg/55.png) top right no-repeat" style="background: url(&quot;images/bg/55.png&quot;) right top / cover no-repeat;">
-                
-                <div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">partners</div>
-                <div class="container" style="background-size: cover;">
-                    <div class="row" style="background-size: cover;">
-                       <div class="col-md-6 offset-md-3 text-center wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-                            <h1>Partners</h1>
-                            <div class="separator" style="background-size: cover;"><span><i class="fa fa-square"></i></span></div>
-                            <div class="spacer-single" style="background-size: cover;"></div>
-                        </div>
-
-                        <div class="col-md-12 text-center" style="background-size: cover;">
-                            <h3>Gold Sponsors</h3>
-                            <div class="spacer-single" style="background-size: cover;"></div>
-                            <img src="images/logo/1.png" alt="" class="grey-hover">
-                            <img src="images/logo/2.png" alt="" class="grey-hover">
-                            <img src="images/logo/3.png" alt="" class="grey-hover">
-							<img src="images/logo/4.png" alt="" class="grey-hover">
-                            <div class="spacer-double" style="background-size: cover;"></div>
-
-                            <h3>Silver Sponsors</h3>
-                            <div class="spacer-single" style="background-size: cover;"></div>
-                            <img src="images/logo/5.png" alt="" class="grey-hover">
-                            <img src="images/logo/6.png" alt="" class="grey-hover">
-                            <img src="images/logo/7.png" alt="" class="grey-hover">
-                            <img src="images/logo/8.png" alt="" class="grey-hover">
-                        </div>
-                    </div>
-                </div>
-            </section>   -->          
-				
-				
-				
-            
-
-
-            <!-- section begin -->
-                <!-- <section id="section-features">
-                    <div class="wm wm-border light wow fadeInDown ">features</div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                                <h1>Why you should Join Event</h1>
-                                <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                                <div class="spacer-single"></div>
-                            </div>
-    
-    
-                            <div class="col-lg-4 wow fadeIn" data-wow-delay="0s">
-                                <div class="box-number square">
-                                   <i class="bg-color hover-color-2 fa fa-microphone text-light"></i>
-                                    <div class="text">
-                                        <h3><span>World Class Speakers</span></h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                            laudantium, totam rem aperiam, eaque ipsa..</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".25s">
-                                <div class="box-number square">
-                                    <i class="bg-color hover-color-2 fa fa-lightbulb-o text-light"></i>
-                                    <div class="text">
-                                        <h3><span>Best Experience</span></h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                            laudantium, totam rem aperiam, eaque ipsa..</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                                <div class="box-number square">
-                                    <i class="bg-color hover-color-2 fa fa-sitemap text-light"></i>
-                                    <div class="text">
-                                        <h3><span>Networking</span></h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                            laudantium, totam rem aperiam, eaque ipsa..</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="spacer-single"></div>
-    
-                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".75s">
-                                <div class="box-number square">
-                                    <i class="bg-color hover-color-2 fa fa-building text-light"></i>
-                                    <div class="text">
-                                        <h3><span>Modern Venue</span></h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                            laudantium, totam rem aperiam, eaque ipsa..</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 wow fadeIn" data-wow-delay="1s">
-                                <div class="box-number square">
-                                    <i class="bg-color hover-color-2  fa fa-users text-light"></i>
-                                    <div class="text">
-                                        <h3><span>New People</span></h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                            laudantium, totam rem aperiam, eaque ipsa..</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4 wow fadeIn" data-wow-delay="1.25s">
-                                <div class="box-number square">
-                                    <i class="bg-color hover-color-2 fa fa-mortar-board text-light"></i>
-                                    <div class="text">
-                                        <h3><span>Certificates</span></h3>
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                            laudantium, totam rem aperiam, eaque ipsa..</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-    
-                        </div>
-                    </div>
-                </section> -->
-            <!-- section close -->
-			
-
-
-
-
-
-			<!-- section begin -->
-            
-
-                    <!-- SPEAKERS CODE -->
-
-                    <!-- <section id="section-speakers" class="jarallax text-light">
-                        <img src="images/bg/1.jpg" class="jarallax-img" alt="">
-                        <div class="wm wm-border dark wow fadeInDown">speakers</div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                                    <h1>The Speakers</h1>
-                                    <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                                    <div class="spacer-single"></div>
-                                </div>
+					</div>
+				</div>
+			</section>
+                    
                                 
-                                <div class="clearfix"></div>
-                              
-                               <div class="col-lg-3 col-md-6">
-                              
-                                    <div class="de-team-list">
-                                        <div class="team-pic">
-                                            <img src="images/team/1.jpg" class="img-responsive img-rounded" alt="" />
-                                        </div>
-                                        <div class="team-desc img-rounded">
-                                            <h3>John Smith</h3>
-                                            <p class="lead">Expert Designer</p>
-                                            <div class="small-border"></div>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-        
-                                            <div class="social">
-                                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="col-lg-3 col-md-6">
-                                   
-                                    <div class="de-team-list">
-                                        <div class="team-pic">
-                                            <img src="images/team/2.jpg" class="img-responsive img-rounded" alt="" />
-                                        </div>
-                                        <div class="team-desc img-rounded">
-                                            <h3>Michael Dennis</h3>
-                                            <p class="lead">Expert Designer</p>
-                                            <div class="small-border"></div>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-        
-                                            <div class="social">
-                                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                                
-                                <div class="col-lg-3 col-md-6">
-                                
-                                    <div class="de-team-list">
-                                        <div class="team-pic">
-                                            <img src="images/team/3.jpg" class="img-responsive img-rounded" alt="" />
-                                        </div>
-                                        <div class="team-desc img-rounded">
-                                            <h3>Sarah Michelle</h3>
-                                            <p class="lead">Expert Designer</p>
-                                            <div class="small-border"></div>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-        
-                                            <div class="social">
-                                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
-                                <div class="col-lg-3 col-md-6">
-                                   
-                                    <div class="de-team-list">
-                                        <div class="team-pic ">
-                                            <img src="images/team/4.jpg" class="img-responsive img-rounded" alt="" />
-                                        </div>
-                                        <div class="team-desc img-rounded">
-                                            <h3>Katty Wilson</h3>
-                                            <p class="lead">Expert Designer</p>
-                                            <div class="small-border"></div>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-        
-                                            <div class="social">
-                                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                                <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-        
-                                <div class="clearfix"></div>
-        
-                            </div>
-                        </div>
-                    </section> -->
+      <Dimensions/>                                       
+ 
+
+			<section id="section-joinus" style="background-size: cover;">
+					<div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">uniting</div>
+					<div class="container" style="background-size: cover;">
+							<div class="row" style="background-size: cover;">
+									<div class="col-md-6 offset-md-3 text-center wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
+											<h1>Join us</h1>
+											<div class="separator" style="background-size: cover;"><span><i class="fa fa-square"></i></span></div>
+											<div class="spacer-single" style="background-size: cover;"></div>
+									</div>
+											
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+											<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-graduation-cap text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Students</span></h3>
+															<p>Young innovators of the state who wish to pursue their dream of developing a product and building their startups 
+																	<br><button class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700" onclick="popup('iedc-summit-2023-230400');">Grab your Tickets</button>
+															</p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
+															
+													</div>
+											</div>
+									</div>
+									</div>
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-briefcase text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Faculty</span></h3>
+															<p>Changemakers enabling the innovators of the state to pursue their dreams and guiding them to excellence 
+																	<br><button class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700" onclick="popup('iedc-summit-2023-230400');">Grab your Tickets</button>
+															</p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-user text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Interested individuals</span></h3>
+															<p>Any interested personnel with an innovative mindset and interest could attend the IEDC Summit 2023
+																	<br><button class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700" onclick="popup('iedc-summit-2023-230400');">Grab your Tickets</button>
+															</p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
+															
+													</div>
+											</div>
+											</div>
+									</div>
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;" id="section-joinus-volcall">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+											<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-tachometer text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Volunteers</span></h3>
+															<p>Chance to advance your career, build network, learn organizational and other skills and much more. (50 Volunteers)
+																	<br>
+																	<a href="" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white">Call Closed</a>
+																	<a href="https://airtable.com/shr9umIgyMg69r6oP" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white" target="_blank">Volunteer List</a>
+																	
+															</p><p>Volunteer list will be published on 17.02.2023</p>
+													</div>
+											</div>
+											</div>
+									</div>
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;" id="section-joinus-volcall">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+											<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-archive text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>KITE</span></h3>
+															<p>Innovators from campuses could showcase their products at Kerala Innovators Technology Expo
+																	<br>
+																	<a href="https://forms.gle/eiGJQZiwqzJVNiAZ8" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white" target="_blank">Apply Now</a>
+																	
+															</p><p>Application closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;" id="section-joinus-volcall">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+											<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-shopping-basket text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Flea Market</span></h3>
+															<p>Products developed by institutes can be exhibited and sold at the flea market at the IEDC Summit
+																	<br>
+																	<a href="https://forms.gle/eiGJQZiwqzJVNiAZ8" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white" target="_blank">Apply Now</a>
+																	
+															</p><p>Application closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+							
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-building text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Corporates</span></h3>
+															<p>Opening up the corporate doors and problem statements to the students will bring out innovative solutions
+																	<br>
+																	<a href="https://forms.gle/3hRrWxjifWkPne1x5" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-cog text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Industry</span></h3>
+															<p>Exposure to industry plays a major role in development of a knowledge economy and this is the best venue
+																	<br>
+																	<a href="https://forms.gle/SttriCfzDvvrWzDv7" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-money text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Investors</span></h3>
+															<p>The spotlight for the investors to find the best early stage ideas, invest in them and take them to the next level. Personnels 
+																	who wish to invest in student ideas may submit you EOI here and we will get in touch with you.
+																	<br>
+																	<a href="https://forms.gle/AFjPyZDjojxuckcw9" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+								
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-users text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Community</span></h3>
+															<p>The right place to interact with students and find the right pool of audience. 
+																	Summit is a great platform to elevate the community by reaching out to a larger 
+																	innovator group from Engineering, Arts and Science, Medical, Pharmacy, Polytechnic 
+																	and other higher education institutions. Expand your community network by being part 
+																	of Asia's largest summit for aspiring student entrepreneurs.
+
+																	<br>
+																	<a href="https://forms.gle/T7y3QDBxHvENMfU37" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
+																	
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+							
+
+									
+
+									
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+											<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-handshake-o text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Mentors</span></h3>
+															<p>Guiding the young innovators and giving them a helping hand in the right direction will give rise to future unicorns. IEDCs are 
+																	the platform where various early stage ideas are born and IEDC Summit is the venue where such students come together. Personnels 
+																	who wish to mentor student ideas may submit you EOI here and we will get in touch with you.
+																	<br>
+																	<a href="https://forms.gle/GLnhAj2yp8aVLd6L8" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a> 
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>                           
+
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+											<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2 fa fa-bank text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Government Departments</span></h3>
+															<p>IEDC Summit is the best venue for the Government departments to put forward their pain points before a young bunch of 
+																	innovators and get awesome solutions that can be taken back and implemented. Governmet Departments wisheing to engage with the 
+																	aspiring entrepreneurs may submit EOI and we wold get in touch with you
+																	<br>
+																	<a href="https://forms.gle/NtftyyeaQMMnTkfT6" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
 
 
-            <!-- section close -->
+									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn; background-size: cover;">
+											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+													<div class="box-number square" style="background-size: cover;">
+													<i class="bg-color hover-color-2  fa fa-rocket text-light"></i>
+													<div class="text" style="background-size: cover;">
+															<h3><span>Startups</span></h3>
+															<p>If you are a startup and would like to showcase your product and receive attention from 
+																	students, teenagers, potential partners also get the top-notch students who could contribute to your 
+																	journey ahead. There is no better way to reach out.IEDC Summit is one of the best ways to 
+																	reach out to your target audience and reaching out to a larger innovator group from 
+																	Engineering, Arts and Science, Medical, Pharmacy, Polytechnic and other higher education 
+																	institutions and can support the emerging skilled innovators and aspiring entrepreneurs. 
+																	Submit your interest of engagement, to be part of Asia's largest summit for aspiring student entrepreneurs.
+
+																	<br>
+																	<a href="https://forms.gle/TRj5EXWhfxWm7pQT7" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
+															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
+													</div>
+											</div>
+											</div>
+									</div>
+
+									
+									<div class="spacer-single sm-hide" style="background-size: cover;"></div>
+									
+
+							</div>
+					</div>
+			</section>
+
 			
-			
-			<!-- section begin -->
-            <!-- <section id="section-schedule" aria-label="section-services-tab" data-bgimage="url(images/bg/6.jpg) top right no-repeat">
-                <div class="wm wm-border light wow fadeInDown ">schedule</div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h1>Event Schedule</h1>
-                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                            <div class="spacer-single"></div>
-                        </div>
+			<Events/>
 
-                        <div class="col-md-12 wow fadeInUp">
-                            <div class="de_tab tab_style_4 text-center">
-                                <ul class="de_nav de_nav_dark">
-                                    <li class="active" data-link="#section-services-tab">
-                                        <h3>Day <span>01</span></h3>
-                                        <h4>June 20, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day <span>02</span></h3>
-                                        <h4>June 21, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day <span>03</span></h3>
-                                        <h4>June 22, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day <span>04</span></h3>
-                                        <h4>June 23, 2023</h4>
-                                    </li>
-                                    <li data-link="#section-services-tab">
-                                        <h3>Day <span>05</span></h3>
-                                        <h4>June 24, 2023</h4>
-                                    </li>
-                                </ul>
-
-                                <div class="de_tab_content text-left">
-
-                                    <div id="tab1" class="tab_single_content">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 10:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Introduction Creative Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">12:00 - 14:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Michael Dennis</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Getting Started With Creative Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">16:00 - 18:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/3.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Sarah Michelle</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Prepare Your Design Concept</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Katty Wilson</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Creative Design Implementation Basic</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="tab2" class="tab_single_content">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/5.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Rose Shipp</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Creative Design Implementation Basic 2</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">12:00 - 14:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/6.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Isaac Nicholas</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>How to Design Happiness</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">16:00 - 18:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/7.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Arnold</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Good Storytelling For Great Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Unintuitive Lessons on Being a Designer</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="tab3" class="tab_single_content">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Michael Dennis</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>The Secret of Great App Design</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">12:00 - 14:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/3.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Sarah Michelle</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Use Design Thinking in Your Everyday Routine</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">16:00 - 18:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Katty Wilson</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Design Into The Real World</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/5.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Rose Shipp</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Advanced Design Implementation</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="tab4" class="tab_single_content">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/6.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Isaac Nicholas</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Advanced Design Implementation 2</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">12:00 - 14:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/7.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Arnold</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Branding, Identity &amp; Logo Design Explained</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">16:00 - 18:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>The Art of Personal Branding</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">20:00 - 22:00 PM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Michael Dennis</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>8 Secret Benefits of Branding</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div id="tab5" class="tab_single_content">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/1.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>How To Brand A Startup On A Small Budget</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/2.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>John Smith</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Establishing a Brand Identity</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/3.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Sarah Michelle</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Interview With World Class Designer</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="schedule-listing">
-                                                    <div class="schedule-item">
-                                                        <div class="sc-time">08:00 - 12:00 AM</div>
-                                                        <div class="sc-pic">
-                                                            <img src="images/team/4.jpg" class="img-circle" alt="">
-                                                        </div>
-                                                        <div class="sc-name">
-                                                            <h4>Katty Wilson</h4>
-                                                            <span>Founder & CEO</span>
-                                                        </div>
-                                                        <div class="sc-info">
-                                                            <h3>Close Event Ceremony &amp; Doorprize</h3>
-                                                            <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- section close -->
-			
+			<Speakers/>
 
 
-
-			<!-- section begin -->
-           <!-- PREV TICKET CODE -->
-            <!-- section close -->
-			
-
-
-
-
-
-			<!-- section begin -->
-            <!-- <section id="section-sponsors" data-bgimage="url(images/bg/5.jpg) top right no-repeat">
-                <div class="wm wm-border light wow fadeInDown ">sponsors</div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                            <h1>Official Sponsors</h1>
-                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                            <div class="spacer-single"></div>
-                        </div>
-
-                        <div class="col-md-12 text-center">
-                            <h3>Gold Sponsors</h3>
-                            <div class="spacer-single"></div>
-                            <img src="images/logo/1.png" alt="" class="grey-hover">
-                            <img src="images/logo/2.png" alt="" class="grey-hover">
-                            <img src="images/logo/3.png" alt="" class="grey-hover">
-							<img src="images/logo/4.png" alt="" class="grey-hover">
-                            <div class="spacer-double"></div>
-
-                            <h3>Silver Sponsors</h3>
-                            <div class="spacer-single"></div>
-                            <img src="images/logo/5.png" alt="" class="grey-hover">
-                            <img src="images/logo/6.png" alt="" class="grey-hover">
-                            <img src="images/logo/7.png" alt="" class="grey-hover">
-                            <img src="images/logo/8.png" alt="" class="grey-hover">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- section close -->
-			
-			<!-- section begin -->
-            <!-- PREV TESTIMONIALS -->
-            <!-- section close -->
-			
-			<!-- section begin -->
-            
-            <!-- section close -->
-			
-			<!-- section begin -->
-            
-            <!-- section close -->
-			
-			<!-- section begin -->
-           
             <!-- logo carousel section close -->
-			
+            <section id="section-precursor" class="no-top no-bottom" aria-label="section" style="background-size: cover;">
+                    <div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">Events</div>                    
+                    <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                    <h1 class="text-5xl">Precursor Events</h1>
+                    <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                    <div class="spacer-single"></div>
+                    </div>
+                    
+
+                <div class=" d-flex  flex-wrap justify-content-center  x-space-5">
+               
+
+                    <div class="flex flex-wrap px-4 py-sm-4 justify-evenly wow fadeInUp">
+                    <div class="max-w-md rounded overflow-hidden shadow-lg">
+                        <img
+                        class="w-full"
+                        src="images/cycle.jpeg"
+                        alt="Sunset in the mountains"
+                        />
+                        <div class="px-6 py-4">
+                        <div class="font-bold text-2xl mb-2">Cyclothon</div>
+                        <p class="text-gray-700 text-base">
+                            IEDC SUMMIT 2023 Cyclothon is a precursor event for SUMMIT 2023 that aims to promote ways to reduce carbon footprint by encouraging citizens to choose greener ways of commute. 
+IEDC SUMMIT 2023 Cyclothon: "Spin for Sustainability" appeals to you to join us and pedal for a safer and greener tomorrow!!
+                        </p>
+                        <div class="items-center d-flex center justify-center pt-1 pb-1 ">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="bg-blue-500 text-white mt-4 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                             id="reg"    
+                        >
+                            Register
+                        </button>
+                        </div>
+                    </div> 
+                    </div>
+
+
+
+                    <div class="flex px-md-4 flex-wrap justify-evenly wow fadeInUp">
+                    <div class="max-w-md rounded overflow-hidden shadow-lg">
+                        <img
+                        class="w-full"
+                        src="images/PovHer.jpeg"
+                        alt="Sunset in the mountains"
+                        />
+                        <div class="px-6 py-4">
+                        <div class="font-bold text-2xl mb-2">PovHer</div>
+                        <p class="text-gray-700 text-base">
+                        As part of our Precursor events for IEDC SUMMIT 2023, an exclusive Women's Meet will be conducted on 11th February for the Women Leads from each IEDC. The event will feature sessions on awareness of special schemes available for aspiring entrepreneurial women and will encourage them to take initiative in their entrepreneurial journeys.
+                        </p>
+                        <div class="items-center d-flex center justify-center pt-1 pb-1 ">
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModalPov"
+                            class="bg-blue-500 text-white mb-3 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                             id="reg"    
+                        >
+                            Register
+                        </button>
+                        </div>
+                    </div> 
+                    </div>
+
+                </div>
+
+
+                   
+                    </div>
+                </section>
+
+                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog relative w-auto pointer-events-none">
+                        <div
+                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                        <div
+                            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md">
+                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Register for Cyclothon</h5>
+                            
+                        </div>
+                        <div class="modal-body relative p-2">
+                            <iframe class="w-full" height="415" src="https://www.yepdesk.com/embed/open-register/63da8f03c9e77c000166e70b/vmkkcra385"></iframe>
+                        </div>
+                        <div
+                            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md">
+                            <button type="button" class="px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out" data-bs-dismiss="modal">Close</button>
+                           
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="exampleModalPov" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog relative w-auto pointer-events-none">
+                        <div
+                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                        <div
+                            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md">
+                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Register for PovHer</h5>
+                            
+                        </div>
+                        <div class="modal-body relative p-2">
+                            <iframe class="w-full" height="415" src="https://www.yepdesk.com/embed/open-register/63e1bca5c9e77c000178925e/k3f9rr6m6q"></iframe>
+                        </div>
+                        <div
+                            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md">
+                            <button type="button" class="px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out" data-bs-dismiss="modal">Close</button>
+                           
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            
+            <section>
+			<div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">pastevents</div>
+            </section>
 			<section id="section-fun-facts" class="jarallax text-light">
+                
                 <img src="images/bg/iluviedcbg2.png" class="jarallax-img" alt="">
                 <div class="container">
-                        
+                     
 						<div class="row flex">
-                            <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
-                                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
-                                    </svg>
-                                    <h3>14</h3>
-                                    <span class="text-white">Districts</span>
+                            <div class="row">
+                                <div class="col-md-2">
+                                   <iframe width="100%" height="150" src="https://www.youtube.com/embed/k1wGLf7s5tA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
-                            </div>
-                            <div class="col-md-2  col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count" >
-                                    <i class="icon_id-2 id-color-1"></i>
-                                    <h3>425</h3>
-                                    <span class="text-white">IEDCs</span>
+                                <div class="col-md-2">
+                                   <iframe width="100%" height="150" src="https://www.youtube.com/embed/XrPAxDk_dM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
-                            </div>
-
-                            <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
-                                      </svg>
-                                    <h3>5000+</h3>
-                                    <span class="text-white">Activities</span>
+                                <div class="col-md-2">
+                                   <iframe width="100%" height="150" src="https://www.youtube.com/embed/iUsuwIyFzIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
-                            </div>
-
-                            <div class="col-md-2 d-flex justify-center  col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-lightbulb d-flex" viewBox="0 0 16 16">
-                                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-                                      </svg>
-                                    <h3>50000+</h3>
-                                    <span class="text-white">Innovators</span>
+                                <div class="col-md-2">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/UqKGvZuhsCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
-                            </div>
-
-                            <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="d-flex bi bi-people-fill" viewBox="0 0 16 16">
-                                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                      </svg>
-                                    <h3>8000+</h3>
-                                    <span class="text-white">Changemakers</span>
+                                <div class="col-md-2">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/zxxGtCYnhD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
-                            </div>                           
-
-                            <div class="col-md-2 d-flex justify-center col-xs-6 wow fadeIn" data-wow-delay=".5s">
-                                <div class="de_count">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-rocket " viewBox="0 0 16 16">
-                                        <path d="M8 8c.828 0 1.5-.895 1.5-2S8.828 4 8 4s-1.5.895-1.5 2S7.172 8 8 8Z"/>
-                                        <path d="M11.953 8.81c-.195-3.388-.968-5.507-1.777-6.819C9.707 1.233 9.23.751 8.857.454a3.495 3.495 0 0 0-.463-.315A2.19 2.19 0 0 0 8.25.064.546.546 0 0 0 8 0a.549.549 0 0 0-.266.073 2.312 2.312 0 0 0-.142.08 3.67 3.67 0 0 0-.459.33c-.37.308-.844.803-1.31 1.57-.805 1.322-1.577 3.433-1.774 6.756l-1.497 1.826-.004.005A2.5 2.5 0 0 0 2 12.202V15.5a.5.5 0 0 0 .9.3l1.125-1.5c.166-.222.42-.4.752-.57.214-.108.414-.192.625-.281l.198-.084c.7.428 1.55.635 2.4.635.85 0 1.7-.207 2.4-.635.067.03.132.056.196.083.213.09.413.174.627.282.332.17.586.348.752.57l1.125 1.5a.5.5 0 0 0 .9-.3v-3.298a2.5 2.5 0 0 0-.548-1.562l-1.499-1.83ZM12 10.445v.055c0 .866-.284 1.585-.75 2.14.146.064.292.13.425.199.39.197.8.46 1.1.86L13 14v-1.798a1.5 1.5 0 0 0-.327-.935L12 10.445ZM4.75 12.64C4.284 12.085 4 11.366 4 10.5v-.054l-.673.82a1.5 1.5 0 0 0-.327.936V14l.225-.3c.3-.4.71-.664 1.1-.861.133-.068.279-.135.425-.199ZM8.009 1.073c.063.04.14.094.226.163.284.226.683.621 1.09 1.28C10.137 3.836 11 6.237 11 10.5c0 .858-.374 1.48-.943 1.893C9.517 12.786 8.781 13 8 13c-.781 0-1.517-.214-2.057-.607C5.373 11.979 5 11.358 5 10.5c0-4.182.86-6.586 1.677-7.928.409-.67.81-1.082 1.096-1.32.09-.076.17-.135.236-.18Z"/>
-                                        <path d="M9.479 14.361c-.48.093-.98.139-1.479.139-.5 0-.999-.046-1.479-.139L7.6 15.8a.5.5 0 0 0 .8 0l1.079-1.439Z"/>
-                                      </svg>
-                                    <h3>300+</h3>
-                                    <span class="text-white">Startups</span>
+                                <div class="col-md-2">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/ryX0wWPhy18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
-                            </div>                           
+                                
+                             </div>                           
                             
 
                            
@@ -1483,13 +578,16 @@ import Slider from "../components/Slider.astro";
                     </div>
                 </section>
 
+                
+
+
                 <section data-bgimage="url(images/bg/4.png) top left no-repeat">
-                    <div class="wm wm-border light wow fadeInDown">Venue</div>
+                    <div class="wm wm-border light wow fadeInDown">venue</div>
                         <div class="container-xl">
                             <div class="row align-items-center">
                                 
                                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-                                    <h2 class="text-5xl" style="color:rgb(8, 8, 120)" >About the Venue</h2>
+                                    <h2 class="text-5xl" style="color:rgb(8, 8, 120)" >About the Host</h2>
                                     <p class="pt-3">Rajagiri School of Engineering & Technology (Autonomous), Kakkanad, Kochi is a premier Institution affiliated to A P J Abdul Kalam Technological University.The University Grants Commission has granted autonomous status to RSET from 2020 onwards. RSET is an AICTE approved college offering excellence in engineering education and research. Undergraduate Programmes offered by the college are NBA accredited and the college is accredited 'A' grade in the second cycle by NAAC. </p>
 
                                     
@@ -1510,32 +608,114 @@ import Slider from "../components/Slider.astro";
                         
                     </section>
 
-                <section id="section-reach" data-bgimage="url(images/bg/4.png) top left no-repeat">
-                    <div class="wm wm-border light wow fadeInDown">Reach us</div>
-                        <div class="container-xl">
-                            <div class="row align-items-center">
-                                
-                                <div class=" col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-                                    <p class="text-3xl">Reach us</p>
-                                    <h2 class="text-5xl" style="color:rgb(8, 8, 120)" >Get Directions to the Event</h2>
-                                    <p class="pt-3">Rajagiri School of Engineering & Technology, Rajagiri Valley Rd, Rajagiri Valley, Kakkanad, Kerala 682039</p>
-                                    
-                                    
-                                    <div class="spacer10"></div>
-                                    
-                                    <!-- <a href="#" class="btn-custom font-weight-bold text-white sm-mb-30">About Us</a> -->
-                                </div>
-                                
-                                <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
-                                        <div>
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.283066703128!2d76.3580909!3d9.9934604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20Of%20Engineering%20%26%20Technology%20Kakkanad!5e0!3m2!1sen!2sin!4v1675339967680!5m2!1sen!2sin" width="100%" height="450;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
 
-                                </div>
+
+
+                    <!-- Section Routes -->
+
+                    <section id="section-reach" data-bgimage="url(images/bg/4.png) top left no-repeat">
+                        <div class="wm wm-border light wow fadeInDown">reachus</div>
+                            <div class="container-xl">
+                                
+                                    
+                                    <div class=" row  wow fadeInLeft " data-wow-delay="0s">
+                                        <!-- <p class="text-3xl">Reach us</p> -->
+                                        <h2 class="text-5xl" style="color:rgb(8, 8, 120)" >Get Directions to the Event</h2>
+                                        
+                                    
+                                    <div class="col-sm">
+                                        
+                                    
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#aluva" type="button" role="tab" aria-controls="aluva" aria-selected="true">Aluva</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#north" type="button" role="tab" aria-controls="north" aria-selected="false">North</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#south" type="button" role="tab" aria-controls="south" aria-selected="false">South</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="vytila-tab" data-bs-toggle="tab" data-bs-target="#vytila" type="button" role="tab" aria-controls="vytilla" aria-selected="false">Vytilla</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="muvatapuzha-tab" data-bs-toggle="tab" data-bs-target="#muvatapuzha" type="button" role="tab" aria-controls="muvatapuzha" aria-selected="false">Muvatapuzha</button>
+                                            </li>
+                                        </ul>
     
-                            </div>
-                        </div>
-                        
+    
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="aluva" role="tabpanel" aria-labelledby="aluva-tab">
+    
+    
+                                                <h2>Aluva Railway Station to RSET</h2>
+                                                <h3>Route 1</h3>
+                                                <h4 class="text-primary">Via Bus</h4> 
+                                                <p>Aluva Railway Station- Aluva KSRTC bus stop (Board Tripunitura bus) - Kalamasherry HMT Junction-Kakkanad - Chitethukara - Rajagiri stop (Final Stop)-RSET</p>
+                                                <h3>Route 2</h3>
+                                                <h4 class="text-primary">Via Metro</h4>
+                                                <p>Aluva Railway Station-Aluva Metro Station-Palarivattom(Metro final stop)-Palarivattom Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET</p>
+                                                
+                                                
+                                            </div>
+                                            
+                                            
+                                            
+                                            <div class="tab-pane fade" id="north" role="tabpanel" aria-labelledby="north-tab">
+                                            
+                                            <h2>North Railway Station to RSET</h2>
+                                            <h3>Route 1</h3>
+                                            <h4 class="text-primary">Via Bus</h4> 
+                                            <p>North Railway Station-Ernakulam Town hall-Kaloor-JLN Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop(Final Stop)-RSET</p>
+                                            <h3>Route 2</h3>
+                                            <h4 class="text-primary">Via Metro</h4>
+                                            <p>North Railway Station-Townhall Metro Station -Palarivattom(Metro final stop)- Palarivattom Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET</p>
+                                            </div>
+                                            
+                                            
+                                            <div class="tab-pane fade" id="south" role="tabpanel" aria-labelledby="contact-tab">
+                                                
+                                                <h2>South Railway Station to RSET</h2>
+                                                <h3>Route 1</h3>
+                                                <h4 class="text-primary">Via Bus</h4> 
+                                                <p>South Railway Station-South Bus Stand-MG Road-Kaloor-JLN Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop -RSET</p>
+                                                <h3>Route 2</h3>
+                                                <h4 class="text-primary">Via Metro</h4>
+                                                <p>Ernakulam South Railway Station- Ernakulam South Metro Station-Palarivattom(Metro final stop)- Palarivattom Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET</p>
+                                            </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            <div class="tab-pane fade" id="vytila" role="tabpanel" aria-labelledby="vytila-tab">
+                                                <h2>Vytilla Hub to RSET</h2>
+                                                <p>Vytilla Hub-Tripunitura-Karingchira Junction-Irumpanam-Chittethukara-Rajagiri Stop(Final Stop)-RSET</p>
+                                            </div>
+    
+                                            <div class="tab-pane fade" id="muvatapuzha" role="tabpanel" aria-labelledby="muvatapuzha-tab">
+                                            <h2>Muvatupuzha to RSET</h2>
+                                            <p>Muvatupuzha -Kolencherry- Puthencruz -Thiruvankulam- Karingchira Junction-Irumpanam-Chittethukara-Rajagiri Stop(Final Stop)-RSET</p>
+                                            </div>
+    
+                                                
+                                        </div>
+                                            
+                                            
+                                    </div>    
+                                            
+                                        <div class=" mb-sm-30 col-sm text-center wow fadeInRight">                                   
+                                            <div>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.283066703128!2d76.3580909!3d9.9934604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20Of%20Engineering%20%26%20Technology%20Kakkanad!5e0!3m2!1sen!2sin!4v1675339967680!5m2!1sen!2sin" width="100%" height="450;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+                           
+                            
                     </section>
 
                 
@@ -1555,7 +735,7 @@ import Slider from "../components/Slider.astro";
                         </div>
                         
                         <div class="de_count m-0 p-0">
-                            <p  class=""> G3B, Thejaswini, Technopark Campus <br> Kariyavattom, Trivandrum, Kerala 695581</p>
+                            <p  class="">Kerala Startup Mission | Government of Kerala <br>G3B, Thejaswini, Technopark Campus <br> Kariyavattom, Trivandrum, Kerala 695581</p>
                             <div class="social-icons">
                                 <a href="https://www.facebook.com/keralastartupmission/"><i class="fa fa-facebook fa-lg"></i></a>
                                 <a href="https://twitter.com/startup_mission/"><i class="fa fa-twitter fa-lg"></i></a>
@@ -1575,7 +755,7 @@ import Slider from "../components/Slider.astro";
                         </div>
                         
                         <div class="de_count m-0 p-0">
-                            <p  class=""> Rajagiri Valley, Kakkanad  <br> Kochi, Kerala, 682039</p>
+                            <p  class=""> Rajagiri School of Engineering & Technology<br>Rajagiri Valley, Kakkanad  <br> Kochi, Kerala, 682039</p>
 
 
                             <div class="social-icons">
@@ -1602,6 +782,14 @@ import Slider from "../components/Slider.astro";
     </div>
     
     <noscript id="tsNoJsMsg" is:inline>Javascript on your browser is not enabled.</noscript>
+    <script>
+        const closeButton = document.getElementById("close-button");
+        const popup = document.getElementById("popup");
+        closeButton.addEventListener("click", function() {
+        popup.style.display = "none";
+        });
+    </script>
     <script is:inline src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
-      
+    
+
 </Layout>
