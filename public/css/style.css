@@ -4010,6 +4010,163 @@ border:solid 1px #ddd;
 		padding-right:0;
 	}
 	
+
+	/* event
+	/* ================================================== */
+	.event {
+		margin-bottom: 30px;
+		text-align:center;
+		}
+		
+		.event h5 {
+		margin-bottom: 0;
+		}
+		
+		.event {
+		margin-bottom: 10px;
+		}
+
+		
+		.pic-event img{
+		width: 100%;
+		height: auto;
+		width:150px;
+		height:150px;
+		position:absolute;
+		}
+		
+		.pic-event img.pic-hover{
+		z-index:100;
+		display:none;
+		}
+		
+		.event .event_desc {
+		font-style: italic;
+		}
+		
+		.event .sb-icons {
+		padding: 10px 0 0 0;
+		}
+		
+		.event .sb-icons img {
+		margin-right: 5px;
+		}
+		
+		.event .columns {
+		margin-bottom: 30px;
+		}
+		
+		.event-list{
+		min-height:180px;
+		}
+		
+		.event-list .event-pic{
+		width:150px;
+		height:150px;
+		position:absolute;
+		}
+		
+		.event-list h5{
+		margin-top:0;
+		margin-bottom:10px;
+		font-size:14px;
+		}
+		
+		.event-list.event_desc{
+		font-style:italic;
+		}
+		
+		.event-list .small-border{
+		float:none;
+		margin:15px 0 0 0;
+		background:#ddd;
+		width:50px;
+		}
+		
+		.event-list .social{
+		width:150px;
+		margin-top:170px;
+		text-align:center;
+		position:absolute;
+		}
+		
+		
+		.event-list .social a{
+		display:inline-block;
+		}
+		
+		.event-list .info{
+		padding-left:170px;
+		}
+		
+		.de-event-list{
+			position:relative;
+			overflow:hidden;
+	
+		}
+		
+		.de-event-list img{
+			width:100%;
+		}
+		
+		.de-event-list .event-desc{
+			width:100%;
+			height:90%;
+			padding:40px;
+			padding-bottom:0;
+			position:absolute;
+			z-index:100;
+			top:100%;
+			background:#111;
+			color:#ccc;
+		}
+		
+		.de-event-list p{
+			clear:both;
+		}
+		
+		.de-event-list .event-desc h3{
+			color:#fff;
+		}
+		
+		.de-event-list .social{
+		}
+		
+		.de-event-list .social a{
+		display:inline-block;
+		padding:0 5px 0 5px;
+		}
+		
+		.de-event-list p.lead{
+			font-size:14px;
+		}
+		
+		.de-event-list .small-border{
+		float:none;
+		margin:15px 0 15px 0;
+		background:rgba(255, 255, 255, .5);
+		width:50px;
+		}
+		
+		.de-event-list .social a:hover{
+		color:#fff;
+		}
+		
+		.de-event-list:hover .event-desc{
+			top:0;
+		}
+		
+		.de-event-contact{
+			text-align:center;
+		}
+		
+		.de-event-contact h3{
+			margin-bottom:0px;
+		}
+
+		
+	
+		
 	/* team
 	/* ================================================== */
 	.team {
