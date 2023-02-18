@@ -6,797 +6,1208 @@ import Stats from "../components/Stats.astro";
 import Dimensions from "../components/Dimensions.astro";
 import Events from "../components/Events.astro";
 import Speakers from "../components/Speakers.astro";
+import PrevSummit22 from "../components/PrevSummit22.astro";
+import PrevSummit21 from "../components/PrevSummit21.astro";
+import PrevSummit19 from "../components/PrevSummit19.astro";
 ---
+
 <Layout>
-            
-  <TopNav/>
+  <TopNav />
 
-		<!-- content begin -->
-		<div id="content" class="no-bottom no-top ">
+  <!-- content begin -->
+  <div id="content" class="no-bottom no-top">
+    <Slider />
 
-      <Slider/>
-			
-			<section id="section-countdown" aria-label="section" class="gradient-to-right pt40 pb40">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-10 offset-md-1">
-							<div class="spacer-single"></div>
-							<div id="defaultCountdown"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<section id="section-about" data-bgimage="url(images/bg/4.png) top left no-repeat">
-				<div class="wm wm-border light wow fadeInDown">IEDC</div>
+    <section
+      id="section-countdown"
+      aria-label="section"
+      class="gradient-to-right pt40 pb40"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="spacer-single"></div>
+            <div id="defaultCountdown"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="container-xl">
-					<div class="row align-items-center">
-							
-						<div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-							<h2 class="text-4xl " >Welcome to the Asia's<br>largest Summit for aspiring student entrepreneurs</h2>
-							<p>Kerala Startup Mission is organizing the seventh edition of the flagship event- IEDC Summit 2023 and, Rajagiri School of Engineering and Technology, heartily welcome you to witness and be a part of Asia's largest summit for aspiring student innovators and entrepreneurs. </p>
-							<p>IEDC Summit is an amalgamation of events from a plethora of domains, including technology, entrepreneurship, skill development, and so much more. It facilitates as a platform for connecting student innovators, industry leaders, and various startups in addition to providing an opportunity for them to engage and network, and form connections that lasts for a lifetime. Meet highly influential entrepreneurs, imbibe from panel discussions, expand your horizons in technical knowledge and financial literacy.</p>
-							<p><b>Let's unravel dimensions and unite perspectives together! </b></p>
-							<div class="spacer10"></div>
-						</div>
+    <section
+      id="section-about"
+      data-bgimage="url(images/bg/4.png) top left no-repeat"
+    >
+      <div class="wm wm-border light wow fadeInDown">IEDC</div>
 
-						<!-- <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+      <div class="container-xl">
+        <div class="row align-items-center">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
+            <h2 class="text-4xl">
+              Welcome to the Asia's<br />largest Summit for aspiring student
+              entrepreneurs
+            </h2>
+            <p>
+              Kerala Startup Mission is organizing the seventh edition of the
+              flagship event- IEDC Summit 2023 and, Rajagiri School of
+              Engineering and Technology, heartily welcome you to witness and be
+              a part of Asia's largest summit for aspiring student innovators
+              and entrepreneurs.
+            </p>
+            <p>
+              IEDC Summit is an amalgamation of events from a plethora of
+              domains, including technology, entrepreneurship, skill
+              development, and so much more. It facilitates as a platform for
+              connecting student innovators, industry leaders, and various
+              startups in addition to providing an opportunity for them to
+              engage and network, and form connections that lasts for a
+              lifetime. Meet highly influential entrepreneurs, imbibe from panel
+              discussions, expand your horizons in technical knowledge and
+              financial literacy.
+            </p>
+            <p>
+              <b>Let's unravel dimensions and unite perspectives together!</b>
+            </p>
+            <div class="spacer10"></div>
+          </div>
+
+          <!-- <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
 							<div class="de-images">
 								<img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images/misc/about.png" alt="" />				
 							</div>
 						</div> -->
 
+          <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+            <iframe
+              width="540"
+              height="325"
+              src="https://www.youtube.com/embed/vQPhSBCqZKg?controls=0?autoplay=0"
+              title="YouTube video player"
+              frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						
-						<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+    <div class="wm wm-border light wow fadeInDown">summit</div>
+  </div>
 
-								<iframe width="540" height="325" src="https://www.youtube.com/embed/vQPhSBCqZKg?controls=0?autoplay=0" title="YouTube video player" frameborder="0" ></iframe>
-						</iframe></div>
-					
-					</div>
-				</div>
+  <Stats />
 
-				<div class="wm wm-border light wow fadeInDown">summit</div>
-    	</section>
-
-      <Stats/>
-
-			<section id="section-about" data-bgimage="url(images/bg/4) top left no-repeat" style="background: url(&quot;images/bg/4&quot;) left top / cover no-repeat;">
-				<div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">unravelling</div>
-				<div class="container" style="background-size: cover;">
-					<div class="row align-items-center" style="background-size: cover;">
-						<div class="col-lg-6 wow fadeInLeft animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInLeft; background-size: cover; opacity: 0;">
-							<div class="row">
-								<h2>Unravel IEDC Summit</h2>
-							</div>
-							<div class="row">
-								<div class="col-lg-6 wow fadeIn animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;">
-										<div class="box-number square" style="background-size: cover;">
-												<i class="bg-color hover-color-2 fa fa-microphone text-light"></i>
-												<div class="text" style="background-size: cover;">
-														<h3><span>Express</span></h3>
-														<ul>
-																<li>Idea Pitching</li>
-																<li>Product Showcase</li>
-																<li>Flea Market</li>
-																
-														</ul>
-												</div>
-										</div>
-								</div>
-
-								<div class="col-lg-6 wow fadeIn animated" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;">
-										<div class="box-number square" style="background-size: cover;">
-												<i class="bg-color hover-color-2 fa fa-lightbulb-o text-light"></i>
-												<div class="text" style="background-size: cover;">
-														<h3><span>Experiment</span></h3>
-														
-																<ul>
-																		<li>Hackathons</li>
-																		<li>Ideathons</li>
-																		<li>Challenges</li>
-																		
-																</ul>
-														
-												</div>
-										</div>
-								</div>
-								<div class="col-lg-6 wow fadeIn animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;">
-										<div class="box-number square" style="background-size: cover;">
-												<i class="bg-color hover-color-2 fa fa-sitemap text-light"></i>
-												<div class="text" style="background-size: cover;">
-														<h3><span>Explore</span></h3>
-														<ul>
-																<li>Masterclasses</li>
-																<li>Workshops</li>
-																<li>Communities</li>
-																<li>Mentor Clinics</li>
-																<li>Investor Connects</li>
-
-																
-														</ul>
-												</div>
-										</div>
-								</div>
-
-								
-
-								<div class="col-lg-4 wow fadeIn animated" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;">
-										<div class="box-number square" style="background-size: cover;">
-												<i class="bg-color hover-color-2 fa fa-building text-light"></i>
-												<div class="text" style="background-size: cover;">
-														<h3><span>Experience</span></h3>
-														<ul>
-																<li>Experience Zones</li>
-																<li>Networking</li>
-																<li>Industries</li>
-																<li>Corporates</li>
-																<li>Government</li>
-
-																
-														</ul>
-												</div>
-										</div>
-								</div> 
-							</div>
-								
-							<div class="spacer10" style="background-size: cover;"></div>                                  
-								
-						</div>
-						
-						<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight; background-size: cover; opacity: 0;">
-							<div class="de-images" style="background-size: cover;">
-									<!--<img class="di-small wow fadeIn animated" src="images/sjcet1.jpg" alt="" style="visibility: visible; animation-name: fadeIn; opacity: 0;">-->
-									<img class="di-small-2" src="images/ajce1.jpg" alt="">
-									<img class="img-fluid wow fadeInRight animated" data-wow-delay=".25s" src="images/sjcet4.jpg" alt="" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight; opacity: 0;">
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-                    
-                                
-      <Dimensions/>                                       
- 
-
-			<section id="section-joinus" style="background-size: cover;">
-					<div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">uniting</div>
-					<div class="container" style="background-size: cover;">
-							<div class="row" style="background-size: cover;">
-									<div class="col-md-6 offset-md-3 text-center wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; background-size: cover;">
-											<h1>Join us</h1>
-											<div class="separator" style="background-size: cover;"><span><i class="fa fa-square"></i></span></div>
-											<div class="spacer-single" style="background-size: cover;"></div>
-									</div>
-											
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-											<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-graduation-cap text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Students</span></h3>
-															<p>Young innovators of the state who wish to pursue their dream of developing a product and building their startups 
-																	<br><button class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700" onclick="popup('iedc-summit-2023-230400');">Grab your Tickets</button>
-															</p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
-															
-													</div>
-											</div>
-									</div>
-									</div>
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay=".25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-briefcase text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Faculty</span></h3>
-															<p>Changemakers enabling the innovators of the state to pursue their dreams and guiding them to excellence 
-																	<br><button class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700" onclick="popup('iedc-summit-2023-230400');">Grab your Tickets</button>
-															</p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-user text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Interested individuals</span></h3>
-															<p>Any interested personnel with an innovative mindset and interest could attend the IEDC Summit 2023
-																	<br><button class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700" onclick="popup('iedc-summit-2023-230400');">Grab your Tickets</button>
-															</p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
-															
-													</div>
-											</div>
-											</div>
-									</div>
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;" id="section-joinus-volcall">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-											<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-tachometer text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Volunteers</span></h3>
-															<p>Chance to advance your career, build network, learn organizational and other skills and much more. (50 Volunteers)
-																	<br>
-																	<a href="" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white">Call Closed</a>
-																	<a href="https://airtable.com/shr9umIgyMg69r6oP" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white" target="_blank">Volunteer List</a>
-																	
-															</p><p>Volunteer list will be published on 17.02.2023</p>
-													</div>
-											</div>
-											</div>
-									</div>
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;" id="section-joinus-volcall">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-											<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-archive text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>KITE</span></h3>
-															<p>Innovators from campuses could showcase their products at Kerala Innovators Technology Expo
-																	<br>
-																	<a href="https://forms.gle/eiGJQZiwqzJVNiAZ8" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white" target="_blank">Apply Now</a>
-																	
-															</p><p>Application closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;" id="section-joinus-volcall">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-											<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-shopping-basket text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Flea Market</span></h3>
-															<p>Products developed by institutes can be exhibited and sold at the flea market at the IEDC Summit
-																	<br>
-																	<a href="https://forms.gle/eiGJQZiwqzJVNiAZ8" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white" target="_blank">Apply Now</a>
-																	
-															</p><p>Application closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-							
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-building text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Corporates</span></h3>
-															<p>Opening up the corporate doors and problem statements to the students will bring out innovative solutions
-																	<br>
-																	<a href="https://forms.gle/3hRrWxjifWkPne1x5" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-cog text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Industry</span></h3>
-															<p>Exposure to industry plays a major role in development of a knowledge economy and this is the best venue
-																	<br>
-																	<a href="https://forms.gle/SttriCfzDvvrWzDv7" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-money text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Investors</span></h3>
-															<p>The spotlight for the investors to find the best early stage ideas, invest in them and take them to the next level. Personnels 
-																	who wish to invest in student ideas may submit you EOI here and we will get in touch with you.
-																	<br>
-																	<a href="https://forms.gle/AFjPyZDjojxuckcw9" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-								
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-users text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Community</span></h3>
-															<p>The right place to interact with students and find the right pool of audience. 
-																	Summit is a great platform to elevate the community by reaching out to a larger 
-																	innovator group from Engineering, Arts and Science, Medical, Pharmacy, Polytechnic 
-																	and other higher education institutions. Expand your community network by being part 
-																	of Asia's largest summit for aspiring student entrepreneurs.
-
-																	<br>
-																	<a href="https://forms.gle/T7y3QDBxHvENMfU37" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
-																	
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-							
-
-									
-
-									
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-											<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-handshake-o text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Mentors</span></h3>
-															<p>Guiding the young innovators and giving them a helping hand in the right direction will give rise to future unicorns. IEDCs are 
-																	the platform where various early stage ideas are born and IEDC Summit is the venue where such students come together. Personnels 
-																	who wish to mentor student ideas may submit you EOI here and we will get in touch with you.
-																	<br>
-																	<a href="https://forms.gle/GLnhAj2yp8aVLd6L8" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a> 
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>                           
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1.25s" style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-											<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2 fa fa-bank text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Government Departments</span></h3>
-															<p>IEDC Summit is the best venue for the Government departments to put forward their pain points before a young bunch of 
-																	innovators and get awesome solutions that can be taken back and implemented. Governmet Departments wisheing to engage with the 
-																	aspiring entrepreneurs may submit EOI and we wold get in touch with you
-																	<br>
-																	<a href="https://forms.gle/NtftyyeaQMMnTkfT6" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-
-
-									<div class="col-lg-4 wow fadeIn animated py-3" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeIn; background-size: cover;">
-											<div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
-													<div class="box-number square" style="background-size: cover;">
-													<i class="bg-color hover-color-2  fa fa-rocket text-light"></i>
-													<div class="text" style="background-size: cover;">
-															<h3><span>Startups</span></h3>
-															<p>If you are a startup and would like to showcase your product and receive attention from 
-																	students, teenagers, potential partners also get the top-notch students who could contribute to your 
-																	journey ahead. There is no better way to reach out.IEDC Summit is one of the best ways to 
-																	reach out to your target audience and reaching out to a larger innovator group from 
-																	Engineering, Arts and Science, Medical, Pharmacy, Polytechnic and other higher education 
-																	institutions and can support the emerging skilled innovators and aspiring entrepreneurs. 
-																	Submit your interest of engagement, to be part of Asia's largest summit for aspiring student entrepreneurs.
-
-																	<br>
-																	<a href="https://forms.gle/TRj5EXWhfxWm7pQT7" class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white" target="_blank">Express Interest</a>
-															</p><p>Expression of Interest closes on 20.02.2023 at 23:59 Hours</p>
-													</div>
-											</div>
-											</div>
-									</div>
-
-									
-									<div class="spacer-single sm-hide" style="background-size: cover;"></div>
-									
-
-							</div>
-					</div>
-			</section>
-
-			
-			<Events/>
-
-			<Speakers/>
-
-
-            <!-- logo carousel section close -->
-            <section id="section-precursor" class="no-top no-bottom" aria-label="section" style="background-size: cover;">
-                    <div class="wm wm-border light wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;">Events</div>                    
-                    <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-                    <h1 class="text-5xl">Precursor Events</h1>
-                    <div class="separator"><span><i class="fa fa-square"></i></span></div>
-                    <div class="spacer-single"></div>
-                    </div>
-                    
-
-                <div class=" d-flex  flex-wrap justify-content-center  x-space-5">
-               
-
-                    <div class="flex flex-wrap px-4 py-sm-4 justify-evenly wow fadeInUp">
-                    <div class="max-w-md rounded overflow-hidden shadow-lg">
-                        <img
-                        class="w-full"
-                        src="images/cycle.jpeg"
-                        alt="Sunset in the mountains"
-                        />
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-2xl mb-2">Cyclothon</div>
-                        <p class="text-gray-700 text-base">
-                            IEDC SUMMIT 2023 Cyclothon is a precursor event for SUMMIT 2023 that aims to promote ways to reduce carbon footprint by encouraging citizens to choose greener ways of commute. 
-IEDC SUMMIT 2023 Cyclothon: "Spin for Sustainability" appeals to you to join us and pedal for a safer and greener tomorrow!!
-                        </p>
-                        <div class="items-center d-flex center justify-center pt-1 pb-1 ">
-                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class="bg-blue-500 text-white mt-4 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                             id="reg"    
-                        >
-                            Register
-                        </button>
-                        </div>
-                    </div> 
-                    </div>
-
-
-
-                    <div class="flex px-md-4 flex-wrap justify-evenly wow fadeInUp">
-                    <div class="max-w-md rounded overflow-hidden shadow-lg">
-                        <img
-                        class="w-full"
-                        src="images/PovHer.jpeg"
-                        alt="Sunset in the mountains"
-                        />
-                        <div class="px-6 py-4">
-                        <div class="font-bold text-2xl mb-2">PovHer</div>
-                        <p class="text-gray-700 text-base">
-                        As part of our Precursor events for IEDC SUMMIT 2023, an exclusive Women's Meet will be conducted on 11th February for the Women Leads from each IEDC. The event will feature sessions on awareness of special schemes available for aspiring entrepreneurial women and will encourage them to take initiative in their entrepreneurial journeys.
-                        </p>
-                        <div class="items-center d-flex center justify-center pt-1 pb-1 ">
-                        <button data-bs-toggle="modal" data-bs-target="#exampleModalPov"
-                            class="bg-blue-500 text-white mb-3 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                             id="reg"    
-                        >
-                            Register
-                        </button>
-                        </div>
-                    </div> 
-                    </div>
-
+  <section
+    id="section-about"
+    data-bgimage="url(images/bg/4) top left no-repeat"
+    style='background: url("images/bg/4") left top / cover no-repeat;'
+  >
+    <div
+      class="wm wm-border light wow fadeInDown animated"
+      style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;"
+    >
+      unravelling
+    </div>
+    <div class="container" style="background-size: cover;">
+      <div class="row align-items-center" style="background-size: cover;">
+        <div
+          class="col-lg-6 wow fadeInLeft animated"
+          data-wow-delay="0s"
+          style="visibility: visible; animation-delay: 0s; animation-name: fadeInLeft; background-size: cover; opacity: 0;"
+        >
+          <div class="row">
+            <h2>Unravel IEDC Summit</h2>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-6 wow fadeIn animated"
+              data-wow-delay="0s"
+              style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;"
+            >
+              <div class="box-number square" style="background-size: cover;">
+                <i class="bg-color hover-color-2 fa fa-microphone text-light"
+                ></i>
+                <div class="text" style="background-size: cover;">
+                  <h3><span>Express</span></h3>
+                  <ul>
+                    <li>Idea Pitching</li>
+                    <li>Product Showcase</li>
+                    <li>Flea Market</li>
+                  </ul>
                 </div>
-
-
-                   
-                    </div>
-                </section>
-
-                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-                    id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog relative w-auto pointer-events-none">
-                        <div
-                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                        <div
-                            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md">
-                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Register for Cyclothon</h5>
-                            
-                        </div>
-                        <div class="modal-body relative p-2">
-                            <iframe class="w-full" height="415" src="https://www.yepdesk.com/embed/open-register/63da8f03c9e77c000166e70b/vmkkcra385"></iframe>
-                        </div>
-                        <div
-                            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md">
-                            <button type="button" class="px-6
-                            py-2.5
-                            bg-blue-600
-                            text-white
-                            font-medium
-                            text-xs
-                            leading-tight
-                            uppercase
-                            rounded
-                            shadow-md
-                            hover:bg-blue-700 hover:shadow-lg
-                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-                            active:bg-blue-800 active:shadow-lg
-                            transition
-                            duration-150
-                            ease-in-out" data-bs-dismiss="modal">Close</button>
-                           
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-                    id="exampleModalPov" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog relative w-auto pointer-events-none">
-                        <div
-                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                        <div
-                            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md">
-                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Register for PovHer</h5>
-                            
-                        </div>
-                        <div class="modal-body relative p-2">
-                            <iframe class="w-full" height="415" src="https://www.yepdesk.com/embed/open-register/63e1bca5c9e77c000178925e/k3f9rr6m6q"></iframe>
-                        </div>
-                        <div
-                            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md">
-                            <button type="button" class="px-6
-                            py-2.5
-                            bg-blue-600
-                            text-white
-                            font-medium
-                            text-xs
-                            leading-tight
-                            uppercase
-                            rounded
-                            shadow-md
-                            hover:bg-blue-700 hover:shadow-lg
-                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-                            active:bg-blue-800 active:shadow-lg
-                            transition
-                            duration-150
-                            ease-in-out" data-bs-dismiss="modal">Close</button>
-                           
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-            
-            <section>
-			<div class="wm wm-border light wow fadeInDown  animated" style="visibility: visible; animation-name: fadeInDown; background-size: cover;">pastevents</div>
-            </section>
-			<section id="section-fun-facts" class="jarallax text-light">
-                
-                <img src="images/bg/iluviedcbg2.png" class="jarallax-img" alt="">
-                <div class="container">
-                     
-						<div class="row flex">
-                            <div class="row">
-                                <div class="col-md-2">
-                                   <iframe width="100%" height="150" src="https://www.youtube.com/embed/k1wGLf7s5tA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                                <div class="col-md-2">
-                                   <iframe width="100%" height="150" src="https://www.youtube.com/embed/XrPAxDk_dM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                                <div class="col-md-2">
-                                   <iframe width="100%" height="150" src="https://www.youtube.com/embed/iUsuwIyFzIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                                <div class="col-md-2">
-                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/UqKGvZuhsCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                                <div class="col-md-2">
-                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/zxxGtCYnhD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                                <div class="col-md-2">
-                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/ryX0wWPhy18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                                </div>
-                                
-                             </div>                           
-                            
-
-                           
-                        </div>
-                    </div>
-                </section>
-
-                
-
-
-                <section data-bgimage="url(images/bg/4.png) top left no-repeat">
-                    <div class="wm wm-border light wow fadeInDown">venue</div>
-                        <div class="container-xl">
-                            <div class="row align-items-center">
-                                
-                                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
-                                    <h2 class="text-5xl" style="color:rgb(8, 8, 120)" >About the Host</h2>
-                                    <p class="pt-3">Rajagiri School of Engineering & Technology (Autonomous), Kakkanad, Kochi is a premier Institution affiliated to A P J Abdul Kalam Technological University.The University Grants Commission has granted autonomous status to RSET from 2020 onwards. RSET is an AICTE approved college offering excellence in engineering education and research. Undergraduate Programmes offered by the college are NBA accredited and the college is accredited 'A' grade in the second cycle by NAAC. </p>
-
-                                    
-                                    
-                                    <div class="spacer10"></div>
-                                    
-                                    <!-- <a href="#" class="btn-custom font-weight-bold text-white sm-mb-30">About Us</a> -->
-                                </div>
-                                
-                                <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
-                                    <div class="de-images">
-                                        <img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images/misc/rset2.jpg" alt="" />
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-                        
-                    </section>
-
-
-
-
-                    <!-- Section Routes -->
-
-                    <section id="section-reach" data-bgimage="url(images/bg/4.png) top left no-repeat">
-                        <div class="wm wm-border light wow fadeInDown">reachus</div>
-                            <div class="container-xl">
-                                
-                                    
-                                    <div class=" row  wow fadeInLeft " data-wow-delay="0s">
-                                        <!-- <p class="text-3xl">Reach us</p> -->
-                                        <h2 class="text-5xl" style="color:rgb(8, 8, 120)" >Get Directions to the Event</h2>
-                                        
-                                    
-                                    <div class="col-sm">
-                                        
-                                    
-                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#aluva" type="button" role="tab" aria-controls="aluva" aria-selected="true">Aluva</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#north" type="button" role="tab" aria-controls="north" aria-selected="false">North</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#south" type="button" role="tab" aria-controls="south" aria-selected="false">South</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="vytila-tab" data-bs-toggle="tab" data-bs-target="#vytila" type="button" role="tab" aria-controls="vytilla" aria-selected="false">Vytilla</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="muvatapuzha-tab" data-bs-toggle="tab" data-bs-target="#muvatapuzha" type="button" role="tab" aria-controls="muvatapuzha" aria-selected="false">Muvatapuzha</button>
-                                            </li>
-                                        </ul>
-    
-    
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="aluva" role="tabpanel" aria-labelledby="aluva-tab">
-    
-    
-                                                <h2>Aluva Railway Station to RSET</h2>
-                                                <h3>Route 1</h3>
-                                                <h4 class="text-primary">Via Bus</h4> 
-                                                <p>Aluva Railway Station- Aluva KSRTC bus stop (Board Tripunitura bus) - Kalamasherry HMT Junction-Kakkanad - Chitethukara - Rajagiri stop (Final Stop)-RSET</p>
-                                                <h3>Route 2</h3>
-                                                <h4 class="text-primary">Via Metro</h4>
-                                                <p>Aluva Railway Station-Aluva Metro Station-Palarivattom(Metro final stop)-Palarivattom Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET</p>
-                                                
-                                                
-                                            </div>
-                                            
-                                            
-                                            
-                                            <div class="tab-pane fade" id="north" role="tabpanel" aria-labelledby="north-tab">
-                                            
-                                            <h2>North Railway Station to RSET</h2>
-                                            <h3>Route 1</h3>
-                                            <h4 class="text-primary">Via Bus</h4> 
-                                            <p>North Railway Station-Ernakulam Town hall-Kaloor-JLN Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop(Final Stop)-RSET</p>
-                                            <h3>Route 2</h3>
-                                            <h4 class="text-primary">Via Metro</h4>
-                                            <p>North Railway Station-Townhall Metro Station -Palarivattom(Metro final stop)- Palarivattom Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET</p>
-                                            </div>
-                                            
-                                            
-                                            <div class="tab-pane fade" id="south" role="tabpanel" aria-labelledby="contact-tab">
-                                                
-                                                <h2>South Railway Station to RSET</h2>
-                                                <h3>Route 1</h3>
-                                                <h4 class="text-primary">Via Bus</h4> 
-                                                <p>South Railway Station-South Bus Stand-MG Road-Kaloor-JLN Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop -RSET</p>
-                                                <h3>Route 2</h3>
-                                                <h4 class="text-primary">Via Metro</h4>
-                                                <p>Ernakulam South Railway Station- Ernakulam South Metro Station-Palarivattom(Metro final stop)- Palarivattom Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET</p>
-                                            </div>
-                                                
-                                                
-                                                
-                                                
-                                                
-                                            <div class="tab-pane fade" id="vytila" role="tabpanel" aria-labelledby="vytila-tab">
-                                                <h2>Vytilla Hub to RSET</h2>
-                                                <p>Vytilla Hub-Tripunitura-Karingchira Junction-Irumpanam-Chittethukara-Rajagiri Stop(Final Stop)-RSET</p>
-                                            </div>
-    
-                                            <div class="tab-pane fade" id="muvatapuzha" role="tabpanel" aria-labelledby="muvatapuzha-tab">
-                                            <h2>Muvatupuzha to RSET</h2>
-                                            <p>Muvatupuzha -Kolencherry- Puthencruz -Thiruvankulam- Karingchira Junction-Irumpanam-Chittethukara-Rajagiri Stop(Final Stop)-RSET</p>
-                                            </div>
-    
-                                                
-                                        </div>
-                                            
-                                            
-                                    </div>    
-                                            
-                                        <div class=" mb-sm-30 col-sm text-center wow fadeInRight">                                   
-                                            <div>
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.283066703128!2d76.3580909!3d9.9934604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20Of%20Engineering%20%26%20Technology%20Kakkanad!5e0!3m2!1sen!2sin!4v1675339967680!5m2!1sen!2sin" width="100%" height="450;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                            </div>
-                                        </div>
-    
-    
-                                    </div>
-                                </div>
-                           
-                            
-                    </section>
-
-                
-
-
-
-            <!-- footer begin -->
-        <footer class="style-2 p-0 m-0">
-            <div class="container">
-                <div class="row">
-
-
-                    <div class="col-md-6  col-xs-6 wow fadeIn d-flex justify-content-center flex-column" data-wow-delay=".5s">
-                        <div class="de_count flex flex-row justify-center items-center space-x-5">
-                            <img class="w-25 px-2" src="images/logo/KSUM.png" />
-                            <img class=" w-25 px-2"   src="images/logo/iedcwh.png" />
-                        </div>
-                        
-                        <div class="de_count m-0 p-0">
-                            <p  class="">Kerala Startup Mission | Government of Kerala <br>G3B, Thejaswini, Technopark Campus <br> Kariyavattom, Trivandrum, Kerala 695581</p>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/keralastartupmission/"><i class="fa fa-facebook fa-lg"></i></a>
-                                <a href="https://twitter.com/startup_mission/"><i class="fa fa-twitter fa-lg"></i></a>
-                                <a href="https://www.instagram.com/keralastartupmission/"><i class="fa fa-instagram fa-lg"></i></a>
-                                <a href="https://www.linkedin.com/company/kerala-startup-mission/?originalSubdomain=in"><i class="fa fa-linkedin fa-lg"></i></a>
-                            </div>
-                            <p class=""> For Queries <br/> iedckerala@startupmission.in</p>
-                            <p  class=""> Bergin S Russel <br/> iedckerala@startupmission.in <br/>6238998379 </p>
-
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6  col-xs-6 wow fadeIn d-flex justify-content-center flex-column" data-wow-delay=".5s">
-                        <div class="de_count flex flex-row justify-center items-center space-x-5 ">
-                            <img class="w-25 px-2" src="images/logo/rsetinnov.png" />
-                            <img class=" w-25 px-2"  src="images/logo/rset-transparent.png" />
-                        </div>
-                        
-                        <div class="de_count m-0 p-0">
-                            <p  class=""> Rajagiri School of Engineering & Technology<br>Rajagiri Valley, Kakkanad  <br> Kochi, Kerala, 682039</p>
-
-
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/people/RSET-IEDC/100068476695865/"><i class="fa fa-facebook fa-lg"></i></a>
-                                <a href="https://www.instagram.com/rsetiedc/?igshid=10lmkxmqfwgjh"><i class="fa fa-instagram fa-lg"></i></a>
-                                <a href="https://www.linkedin.com/company/rset-iedc/"><i class="fa fa-linkedin fa-lg"></i></a>
-                                <a href="https://www.youtube.com/channel/UCVzfXE9R2PBBDJyJmPwSyQQ"><i class="fa fa-youtube fa-lg"></i></a>
-
-                            </div>
-                          
-                            <p class=""> For Queries <br/> rsetiedc@rajagiritech.edu.in</p>
-                            <p  class=""> Nitheesh Kurian <br/> nitheeshk@rajagiritech.edu.in <br/>9497413879</p>
-                        </div>
-                    </div>
-
-                    
-
-                </div>
+              </div>
             </div>
 
-            <p class="de_count m-0 p-0 mt-1">Copyright © 2023 Kerala Startup Mission. All Rights Reserved.</p>
-        </footer>
-        <!-- footer close -->
-    </div>
-    
-    <noscript id="tsNoJsMsg" is:inline>Javascript on your browser is not enabled.</noscript>
-    <script>
-        const closeButton = document.getElementById("close-button");
-        const popup = document.getElementById("popup");
-        closeButton.addEventListener("click", function() {
-        popup.style.display = "none";
-        });
-    </script>
-    <script is:inline src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
-    
+            <div
+              class="col-lg-6 wow fadeIn animated"
+              data-wow-delay=".25s"
+              style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;"
+            >
+              <div class="box-number square" style="background-size: cover;">
+                <i class="bg-color hover-color-2 fa fa-lightbulb-o text-light"
+                ></i>
+                <div class="text" style="background-size: cover;">
+                  <h3><span>Experiment</span></h3>
 
+                  <ul>
+                    <li>Hackathons</li>
+                    <li>Ideathons</li>
+                    <li>Challenges</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 wow fadeIn animated"
+              data-wow-delay=".5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;"
+            >
+              <div class="box-number square" style="background-size: cover;">
+                <i class="bg-color hover-color-2 fa fa-sitemap text-light"></i>
+                <div class="text" style="background-size: cover;">
+                  <h3><span>Explore</span></h3>
+                  <ul>
+                    <li>Masterclasses</li>
+                    <li>Workshops</li>
+                    <li>Communities</li>
+                    <li>Mentor Clinics</li>
+                    <li>Investor Connects</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 wow fadeIn animated"
+              data-wow-delay=".75s"
+              style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;"
+            >
+              <div class="box-number square" style="background-size: cover;">
+                <i class="bg-color hover-color-2 fa fa-building text-light"></i>
+                <div class="text" style="background-size: cover;">
+                  <h3><span>Experience</span></h3>
+                  <ul>
+                    <li>Experience Zones</li>
+                    <li>Networking</li>
+                    <li>Industries</li>
+                    <li>Corporates</li>
+                    <li>Government</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacer10" style="background-size: cover;"></div>
+        </div>
+
+        <div
+          class="col-lg-6 mb-sm-30 text-center wow fadeInRight animated"
+          style="visibility: visible; animation-name: fadeInRight; background-size: cover; opacity: 0;"
+        >
+          <div class="de-images" style="background-size: cover;">
+            <!--<img class="di-small wow fadeIn animated" src="images/sjcet1.jpg" alt="" style="visibility: visible; animation-name: fadeIn; opacity: 0;">-->
+            <img class="di-small-2" src="images/ajce1.jpg" alt="" />
+            <img
+              class="img-fluid wow fadeInRight animated"
+              data-wow-delay=".25s"
+              src="images/sjcet4.jpg"
+              alt=""
+              style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight; opacity: 0;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Dimensions />
+
+  <section id="section-joinus" style="background-size: cover;">
+    <div
+      class="wm wm-border light wow fadeInDown animated"
+      style="visibility: visible; animation-name: fadeInDown; background-size: cover;"
+    >
+      uniting
+    </div>
+    <div class="container" style="background-size: cover;">
+      <div class="row" style="background-size: cover;">
+        <div
+          class="col-md-6 offset-md-3 text-center wow fadeInUp animated"
+          style="visibility: visible; animation-name: fadeInUp; background-size: cover;"
+        >
+          <h1>Join us</h1>
+          <div class="separator" style="background-size: cover;">
+            <span><i class="fa fa-square"></i></span>
+          </div>
+          <div class="spacer-single" style="background-size: cover;"></div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="0s"
+          style="visibility: visible; animation-delay: 0s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-graduation-cap text-light"
+              ></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Students</span></h3>
+                <p>
+                  Young innovators of the state who wish to pursue their dream
+                  of developing a product and building their startups
+                  <br /><button
+                    class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700"
+                    onclick="popup('iedc-summit-2023-230400');"
+                    >Grab your Tickets</button
+                  >
+                </p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay=".25s"
+          style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-briefcase text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Faculty</span></h3>
+                <p>
+                  Changemakers enabling the innovators of the state to pursue
+                  their dreams and guiding them to excellence
+                  <br /><button
+                    class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700"
+                    onclick="popup('iedc-summit-2023-230400');"
+                    >Grab your Tickets</button
+                  >
+                </p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay=".5s"
+          style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-user text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Interested individuals</span></h3>
+                <p>
+                  Any interested personnel with an innovative mindset and
+                  interest could attend the IEDC Summit 2023
+                  <br /><button
+                    class="appearance-none rounded-full border-0 px-3 py-1 bg-pink-600 text-white hover:bg-pink-700"
+                    onclick="popup('iedc-summit-2023-230400');"
+                    >Grab your Tickets</button
+                  >
+                </p><p>Tickets closes on 25.02.2023 at 23:59 Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+          id="section-joinus-volcall"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-tachometer text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Volunteers</span></h3>
+                <p>
+                  Chance to advance your career, build network, learn
+                  organizational and other skills and much more. (50 Volunteers)
+                  <br />
+                  <a
+                    href=""
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white"
+                    >Call Closed</a
+                  >
+                  <a
+                    href="https://airtable.com/shr9umIgyMg69r6oP"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Volunteer List</a
+                  >
+                </p><p>Volunteer list will be published on 17.02.2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+          id="section-joinus-volcall"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-archive text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>KITE</span></h3>
+                <p>
+                  Innovators from campuses could showcase their products at
+                  Kerala Innovators Technology Expo
+                  <br />
+                  <a
+                    href="https://forms.gle/eiGJQZiwqzJVNiAZ8"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Apply Now</a
+                  >
+                </p><p>Application closes on 20.02.2023 at 23:59 Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+          id="section-joinus-volcall"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-shopping-basket text-light"
+              ></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Flea Market</span></h3>
+                <p>
+                  Products developed by institutes can be exhibited and sold at
+                  the flea market at the IEDC Summit
+                  <br />
+                  <a
+                    href="https://forms.gle/eiGJQZiwqzJVNiAZ8"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-orange-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Apply Now</a
+                  >
+                </p><p>Application closes on 20.02.2023 at 23:59 Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-building text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Corporates</span></h3>
+                <p>
+                  Opening up the corporate doors and problem statements to the
+                  students will bring out innovative solutions
+                  <br />
+                  <a
+                    href="https://forms.gle/3hRrWxjifWkPne1x5"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-cog text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Industry</span></h3>
+                <p>
+                  Exposure to industry plays a major role in development of a
+                  knowledge economy and this is the best venue
+                  <br />
+                  <a
+                    href="https://forms.gle/SttriCfzDvvrWzDv7"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-money text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Investors</span></h3>
+                <p>
+                  The spotlight for the investors to find the best early stage
+                  ideas, invest in them and take them to the next level.
+                  Personnels who wish to invest in student ideas may submit you
+                  EOI here and we will get in touch with you.
+                  <br />
+                  <a
+                    href="https://forms.gle/AFjPyZDjojxuckcw9"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay=".75s"
+          style="visibility: visible; animation-delay: 0.75s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-users text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Community</span></h3>
+                <p>
+                  The right place to interact with students and find the right
+                  pool of audience. Summit is a great platform to elevate the
+                  community by reaching out to a larger innovator group from
+                  Engineering, Arts and Science, Medical, Pharmacy, Polytechnic
+                  and other higher education institutions. Expand your community
+                  network by being part of Asia's largest summit for aspiring
+                  student entrepreneurs.
+
+                  <br />
+                  <a
+                    href="https://forms.gle/T7y3QDBxHvENMfU37"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-handshake-o text-light"
+              ></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Mentors</span></h3>
+                <p>
+                  Guiding the young innovators and giving them a helping hand in
+                  the right direction will give rise to future unicorns. IEDCs
+                  are the platform where various early stage ideas are born and
+                  IEDC Summit is the venue where such students come together.
+                  Personnels who wish to mentor student ideas may submit you EOI
+                  here and we will get in touch with you.
+                  <br />
+                  <a
+                    href="https://forms.gle/GLnhAj2yp8aVLd6L8"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1.25s"
+          style="visibility: visible; animation-delay: 1.25s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-bank text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Government Departments</span></h3>
+                <p>
+                  IEDC Summit is the best venue for the Government departments
+                  to put forward their pain points before a young bunch of
+                  innovators and get awesome solutions that can be taken back
+                  and implemented. Governmet Departments wisheing to engage with
+                  the aspiring entrepreneurs may submit EOI and we wold get in
+                  touch with you
+                  <br />
+                  <a
+                    href="https://forms.gle/NtftyyeaQMMnTkfT6"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-4 wow fadeIn animated py-3"
+          data-wow-delay="1s"
+          style="visibility: visible; animation-delay: 1s; animation-name: fadeIn; background-size: cover;"
+        >
+          <div class="max-w-md rounded overflow-hidden shadow-lg px-2 py-2">
+            <div class="box-number square" style="background-size: cover;">
+              <i class="bg-color hover-color-2 fa fa-rocket text-light"></i>
+              <div class="text" style="background-size: cover;">
+                <h3><span>Startups</span></h3>
+                <p>
+                  If you are a startup and would like to showcase your product
+                  and receive attention from students, teenagers, potential
+                  partners also get the top-notch students who could contribute
+                  to your journey ahead. There is no better way to reach
+                  out.IEDC Summit is one of the best ways to reach out to your
+                  target audience and reaching out to a larger innovator group
+                  from Engineering, Arts and Science, Medical, Pharmacy,
+                  Polytechnic and other higher education institutions and can
+                  support the emerging skilled innovators and aspiring
+                  entrepreneurs. Submit your interest of engagement, to be part
+                  of Asia's largest summit for aspiring student entrepreneurs.
+
+                  <br />
+                  <a
+                    href="https://forms.gle/TRj5EXWhfxWm7pQT7"
+                    class="btn-appearance-none rounded-full border-0 px-3 py-1 bg-violet-600 text-white hover:bg-pink-700 text-white"
+                    target="_blank">Express Interest</a
+                  >
+                </p><p>
+                  Expression of Interest closes on 20.02.2023 at 23:59 Hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer-single sm-hide" style="background-size: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Speakers />
+  <Events />
+
+  <!-- logo carousel section close -->
+  <section
+    id="section-precursor"
+    class="no-top no-bottom"
+    aria-label="section"
+    style="background-size: cover;"
+  >
+    <div
+      class="wm wm-border light wow fadeInDown animated"
+      style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;"
+    >
+      Events
+    </div>
+    <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+      <h1 class="text-5xl">Precursor Events</h1>
+      <div class="separator"><span><i class="fa fa-square"></i></span></div>
+      <div class="spacer-single"></div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center x-space-5">
+      <div class="flex flex-wrap px-4 py-sm-4 justify-evenly wow fadeInUp">
+        <div class="max-w-md rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="images/cycle.jpeg"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-2xl mb-2">Cyclothon</div>
+            <p class="text-gray-700 text-base">
+              IEDC SUMMIT 2023 Cyclothon is a precursor event for SUMMIT 2023
+              that aims to promote ways to reduce carbon footprint by
+              encouraging citizens to choose greener ways of commute. IEDC
+              SUMMIT 2023 Cyclothon: "Spin for Sustainability" appeals to you to
+              join us and pedal for a safer and greener tomorrow!!
+            </p>
+            <div class="items-center d-flex center justify-center pt-1 pb-1">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="bg-blue-500 text-white mt-4 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                id="reg"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex px-md-4 flex-wrap justify-evenly wow fadeInUp">
+          <div class="max-w-md rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="images/PovHer.jpeg"
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2">PovHer</div>
+              <p class="text-gray-700 text-base">
+                As part of our Precursor events for IEDC SUMMIT 2023, an
+                exclusive Women's Meet will be conducted on 11th February for
+                the Women Leads from each IEDC. The event will feature sessions
+                on awareness of special schemes available for aspiring
+                entrepreneurial women and will encourage them to take initiative
+                in their entrepreneurial journeys.
+              </p>
+              <div class="items-center d-flex center justify-center pt-1 pb-1">
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalPov"
+                  class="bg-blue-500 text-white mb-3 hover:bg-blue-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+                  id="reg"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog relative w-auto pointer-events-none">
+        <div
+          class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+        >
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md"
+          >
+            <h5
+              class="text-xl font-medium leading-normal text-gray-800"
+              id="exampleModalLabel"
+            >
+              Register for Cyclothon
+            </h5>
+          </div>
+          <div class="modal-body relative p-2">
+            <iframe
+              class="w-full"
+              height="415"
+              src="https://www.yepdesk.com/embed/open-register/63da8f03c9e77c000166e70b/vmkkcra385"
+            ></iframe>
+          </div>
+          <div
+            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md"
+          >
+            <button
+              type="button"
+              class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              data-bs-dismiss="modal">Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+      id="exampleModalPov"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog relative w-auto pointer-events-none">
+        <div
+          class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+        >
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md"
+          >
+            <h5
+              class="text-xl font-medium leading-normal text-gray-800"
+              id="exampleModalLabel"
+            >
+              Register for PovHer
+            </h5>
+          </div>
+          <div class="modal-body relative p-2">
+            <iframe
+              class="w-full"
+              height="415"
+              src="https://www.yepdesk.com/embed/open-register/63e1bca5c9e77c000178925e/k3f9rr6m6q"
+            ></iframe>
+          </div>
+          <div
+            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-2border-t border-gray-200 rounded-b-md"
+          >
+            <button
+              type="button"
+              class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              data-bs-dismiss="modal">Close</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div
+        class="wm wm-border light wow fadeInDown animated"
+        style="visibility: visible; animation-name: fadeInDown; background-size: cover;"
+      >
+        pastevents
+      </div>
+    </section>
+    <section id="section-fun-facts" class="jarallax text-light">
+      <img src="images/bg/iluviedcbg2.png" class="jarallax-img" alt="" />
+      <div class="container">
+        <div class="row flex">
+          <div class="row">
+            <div class="col-md-2">
+              <iframe
+                width="100%"
+                height="150"
+                src="https://www.youtube.com/embed/k1wGLf7s5tA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-2">
+              <iframe
+                width="100%"
+                height="150"
+                src="https://www.youtube.com/embed/XrPAxDk_dM4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-2">
+              <iframe
+                width="100%"
+                height="150"
+                src="https://www.youtube.com/embed/iUsuwIyFzIk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-2">
+              <iframe
+                width="100%"
+                height="150"
+                src="https://www.youtube.com/embed/UqKGvZuhsCU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-2">
+              <iframe
+                width="100%"
+                height="150"
+                src="https://www.youtube.com/embed/zxxGtCYnhD4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-2">
+              <iframe
+                width="100%"
+                height="150"
+                src="https://www.youtube.com/embed/ryX0wWPhy18"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-bgimage="url(images/bg/4.png) top left no-repeat">
+      <div class="wm wm-border light wow fadeInDown">venue</div>
+      <div class="container-xl">
+        <div class="row align-items-center">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0s">
+            <h2 class="text-5xl" style="color:rgb(8, 8, 120)">
+              About the Host
+            </h2>
+            <p class="pt-3">
+              Rajagiri School of Engineering & Technology (Autonomous),
+              Kakkanad, Kochi is a premier Institution affiliated to A P J Abdul
+              Kalam Technological University.The University Grants Commission
+              has granted autonomous status to RSET from 2020 onwards. RSET is
+              an AICTE approved college offering excellence in engineering
+              education and research. Undergraduate Programmes offered by the
+              college are NBA accredited and the college is accredited 'A' grade
+              in the second cycle by NAAC.
+            </p>
+
+            <div class="spacer10"></div>
+
+            <!-- <a href="#" class="btn-custom font-weight-bold text-white sm-mb-30">About Us</a> -->
+          </div>
+
+          <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+            <div class="de-images">
+              <img
+                class="img-fluid wow fadeInRight"
+                data-wow-delay=".25s"
+                src="images/misc/rset2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Routes -->
+
+    <section
+      id="section-reach"
+      data-bgimage="url(images/bg/4.png) top left no-repeat"
+    >
+      <div class="wm wm-border light wow fadeInDown">reachus</div>
+      <div class="container-xl">
+        <div class="row wow fadeInLeft" data-wow-delay="0s">
+          <!-- <p class="text-3xl">Reach us</p> -->
+          <h2 class="text-5xl" style="color:rgb(8, 8, 120)">
+            Get Directions to the Event
+          </h2>
+
+          <div class="col-sm">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#aluva"
+                  type="button"
+                  role="tab"
+                  aria-controls="aluva"
+                  aria-selected="true">Aluva</button
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#north"
+                  type="button"
+                  role="tab"
+                  aria-controls="north"
+                  aria-selected="false">North</button
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#south"
+                  type="button"
+                  role="tab"
+                  aria-controls="south"
+                  aria-selected="false">South</button
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="vytila-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#vytila"
+                  type="button"
+                  role="tab"
+                  aria-controls="vytilla"
+                  aria-selected="false">Vytilla</button
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="muvatapuzha-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#muvatapuzha"
+                  type="button"
+                  role="tab"
+                  aria-controls="muvatapuzha"
+                  aria-selected="false">Muvatapuzha</button
+                >
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="aluva"
+                role="tabpanel"
+                aria-labelledby="aluva-tab"
+              >
+                <h2>Aluva Railway Station to RSET</h2>
+                <h3>Route 1</h3>
+                <h4 class="text-primary">Via Bus</h4>
+                <p>
+                  Aluva Railway Station- Aluva KSRTC bus stop (Board Tripunitura
+                  bus) - Kalamasherry HMT Junction-Kakkanad - Chitethukara -
+                  Rajagiri stop (Final Stop)-RSET
+                </p>
+                <h3>Route 2</h3>
+                <h4 class="text-primary">Via Metro</h4>
+                <p>
+                  Aluva Railway Station-Aluva Metro Station-Palarivattom(Metro
+                  final stop)-Palarivattom Junction(Board Kakkanad
+                  Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final Stop)-RSET
+                </p>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="north"
+                role="tabpanel"
+                aria-labelledby="north-tab"
+              >
+                <h2>North Railway Station to RSET</h2>
+                <h3>Route 1</h3>
+                <h4 class="text-primary">Via Bus</h4>
+                <p>
+                  North Railway Station-Ernakulam Town hall-Kaloor-JLN
+                  Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop(Final
+                  Stop)-RSET
+                </p>
+                <h3>Route 2</h3>
+                <h4 class="text-primary">Via Metro</h4>
+                <p>
+                  North Railway Station-Townhall Metro Station
+                  -Palarivattom(Metro final stop)- Palarivattom Junction(Board
+                  Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri stop (Final
+                  Stop)-RSET
+                </p>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="south"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <h2>South Railway Station to RSET</h2>
+                <h3>Route 1</h3>
+                <h4 class="text-primary">Via Bus</h4>
+                <p>
+                  South Railway Station-South Bus Stand-MG Road-Kaloor-JLN
+                  Stadium-Palarivattom-Kakkanad-Chitethukara-Rajagiri stop -RSET
+                </p>
+                <h3>Route 2</h3>
+                <h4 class="text-primary">Via Metro</h4>
+                <p>
+                  Ernakulam South Railway Station- Ernakulam South Metro
+                  Station-Palarivattom(Metro final stop)- Palarivattom
+                  Junction(Board Kakkanad Bus)-Kakkanad-Chitethukara-Rajagiri
+                  stop (Final Stop)-RSET
+                </p>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="vytila"
+                role="tabpanel"
+                aria-labelledby="vytila-tab"
+              >
+                <h2>Vytilla Hub to RSET</h2>
+                <p>
+                  Vytilla Hub-Tripunitura-Karingchira
+                  Junction-Irumpanam-Chittethukara-Rajagiri Stop(Final
+                  Stop)-RSET
+                </p>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="muvatapuzha"
+                role="tabpanel"
+                aria-labelledby="muvatapuzha-tab"
+              >
+                <h2>Muvatupuzha to RSET</h2>
+                <p>
+                  Muvatupuzha -Kolencherry- Puthencruz -Thiruvankulam-
+                  Karingchira Junction-Irumpanam-Chittethukara-Rajagiri
+                  Stop(Final Stop)-RSET
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-sm-30 col-sm text-center wow fadeInRight">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.283066703128!2d76.3580909!3d9.9934604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20Of%20Engineering%20%26%20Technology%20Kakkanad!5e0!3m2!1sen!2sin!4v1675339967680!5m2!1sen!2sin"
+                width="100%"
+                height="450;"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <PrevSummit22 />
+
+    <PrevSummit21 />
+
+    <PrevSummit19 />
+
+    <!-- footer begin -->
+    <footer class="style-2 p-0 m-0">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 col-xs-6 wow fadeIn d-flex justify-content-center flex-column"
+            data-wow-delay=".5s"
+          >
+            <div
+              class="de_count flex flex-row justify-center items-center space-x-5"
+            >
+              <img class="w-25 px-2" src="images/logo/KSUM.png" />
+              <img class="w-25 px-2" src="images/logo/iedcwh.png" />
+            </div>
+
+            <div class="de_count m-0 p-0">
+              <p class="">
+                Kerala Startup Mission | Government of Kerala <br />G3B,
+                Thejaswini, Technopark Campus <br /> Kariyavattom, Trivandrum, Kerala
+                695581
+              </p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/keralastartupmission/"
+                  ><i class="fa fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://twitter.com/startup_mission/"
+                  ><i class="fa fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/keralastartupmission/"
+                  ><i class="fa fa-instagram fa-lg"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/kerala-startup-mission/?originalSubdomain=in"
+                  ><i class="fa fa-linkedin fa-lg"></i>
+                </a>
+              </div>
+              <p class="">For Queries <br /> iedckerala@startupmission.in</p>
+              <p class="">
+                Bergin S Russel <br /> iedckerala@startupmission.in <br
+                />6238998379
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xs-6 wow fadeIn d-flex justify-content-center flex-column"
+            data-wow-delay=".5s"
+          >
+            <div
+              class="de_count flex flex-row justify-center items-center space-x-5"
+            >
+              <img class="w-25 px-2" src="images/logo/rsetinnov.png" />
+              <img class="w-25 px-2" src="images/logo/rset-transparent.png" />
+            </div>
+
+            <div class="de_count m-0 p-0">
+              <p class="">
+                Rajagiri School of Engineering & Technology<br />Rajagiri
+                Valley, Kakkanad <br /> Kochi, Kerala, 682039
+              </p>
+
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/people/RSET-IEDC/100068476695865/"
+                  ><i class="fa fa-facebook fa-lg"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/rsetiedc/?igshid=10lmkxmqfwgjh"
+                  ><i class="fa fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/rset-iedc/"
+                  ><i class="fa fa-linkedin fa-lg"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/channel/UCVzfXE9R2PBBDJyJmPwSyQQ"
+                  ><i class="fa fa-youtube fa-lg"></i>
+                </a>
+              </div>
+
+              <p class="">For Queries <br /> rsetiedc@rajagiritech.edu.in</p>
+              <p class="">
+                Nitheesh Kurian <br /> nitheeshk@rajagiritech.edu.in <br
+                />9497413879
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="de_count m-0 p-0 mt-1">
+        Copyright © 2023 Kerala Startup Mission. All Rights Reserved.
+      </p>
+    </footer>
+    <!-- footer close -->
+
+    <noscript id="tsNoJsMsg" is:inline
+      >Javascript on your browser is not enabled.</noscript
+    >
+    <script>
+      const closeButton = document.getElementById("close-button");
+      const popup = document.getElementById("popup");
+      closeButton.addEventListener("click", function () {
+        popup.style.display = "none";
+      });
+    </script>
+    <script
+      is:inline
+      src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js"
+      type="text/javascript"
+    ></script>
+  </section>
 </Layout>
