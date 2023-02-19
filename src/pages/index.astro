@@ -6,6 +6,7 @@ import Stats from "../components/Stats.astro";
 import Dimensions from "../components/Dimensions.astro";
 import Events from "../components/Events.astro";
 import Speakers from "../components/Speakers.astro";
+import PreEvent from "../components/PrevEvent.astro";
 ---
 <Layout>
             
@@ -41,11 +42,18 @@ import Speakers from "../components/Speakers.astro";
 							<div class="spacer10"></div>
 						</div>
 
-						<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+						<!-- <div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
 							<div class="de-images">
 								<img class="img-fluid wow fadeInRight" data-wow-delay=".25s" src="images/misc/about.png" alt="" />				
 							</div>
-						</div>
+						</div> -->
+
+
+						
+						<div class="col-lg-6 mb-sm-30 text-center wow fadeInRight">
+
+								<iframe width="540" height="325" src="https://www.youtube.com/embed/vQPhSBCqZKg?controls=0?autoplay=0" title="YouTube video player" frameborder="0" ></iframe>
+						</iframe></div>
 					
 					</div>
 				</div>
@@ -392,10 +400,10 @@ import Speakers from "../components/Speakers.astro";
 					</div>
 			</section>
 
-			
-			<Events/>
+		<Speakers/>
+		
+		<Events/>
 
-			<Speakers/>
 
 
             <!-- logo carousel section close -->
@@ -718,8 +726,13 @@ IEDC SUMMIT 2023 Cyclothon: "Spin for Sustainability" appeals to you to join us 
                             
                     </section>
 
-                
+        
+					
 
+		
+
+
+		<PreEvent/>
 
 
             <!-- footer begin -->

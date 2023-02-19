@@ -119,7 +119,7 @@ body.de_light,.de_light{
 	padding:0;
 	margin:0;
 }
-.rtl .de-team-list .small-border{
+.rtl .de-team-list .small-border .de-poster-list{
 	float:right;
 }
 .rtl .crumb li{
@@ -4010,6 +4010,164 @@ border:solid 1px #ddd;
 		padding-right:0;
 	}
 	
+
+	/* event
+	/* ================================================== */
+	.event {
+		margin-bottom: 30px;
+		text-align:center;
+		}
+		
+		.event h5 {
+		margin-bottom: 0;
+		}
+		
+		.event {
+		margin-bottom: 10px;
+		}
+
+		
+		.pic-event img{
+		width: 100%;
+		height: auto;
+		width:150px;
+		height:150px;
+		position:absolute;
+		}
+		
+		.pic-event img.pic-hover{
+		z-index:100;
+		display:none;
+		}
+		
+		.event .event_desc {
+		font-style: italic;
+		}
+		
+		.event .sb-icons {
+		padding: 10px 0 0 0;
+		}
+		
+		.event .sb-icons img {
+		margin-right: 5px;
+		}
+		
+		.event .columns {
+		margin-bottom: 30px;
+		}
+		
+		.event-list{
+		min-height:180px;
+		}
+		
+		.event-list .event-pic{
+		width:150px;
+		height:150px;
+		position:absolute;
+		}
+		
+		.event-list h5{
+		margin-top:0;
+		margin-bottom:10px;
+		font-size:14px;
+		}
+		
+		.event-list.event_desc{
+		font-style:italic;
+		}
+		
+		.event-list .small-border{
+		float:none;
+		margin:15px 0 0 0;
+		background:#ddd;
+		width:50px;
+		}
+		
+		.event-list .social{
+		width:150px;
+		margin-top:170px;
+		text-align:center;
+		position:absolute;
+		}
+		
+		
+		.event-list .social a{
+		display:inline-block;
+		}
+		
+		.event-list .info{
+		padding-left:170px;
+		}
+		
+		.de-event-list{
+			position:relative;
+			overflow:hidden;
+	
+		}
+		
+		.de-event-list img{
+			width:100%;
+		}
+		
+		.de-event-list .event-desc{
+			width:100%;
+			height:100%;
+			padding:40px;
+			padding-bottom:0;
+			position:absolute;
+			z-index:100;
+			top:100%;
+			background:#111;
+			opacity: 0.9;
+			color:#ccc;
+		}
+		
+		.de-event-list p{
+			clear:both;
+		}
+		
+		.de-event-list .event-desc h2{
+			color:rgb(54, 144, 212);
+		}
+		
+		.de-event-list .social{
+		}
+		
+		.de-event-list .social a{
+		display:inline-block;
+		padding:0 5px 0 5px;
+		}
+		
+		.de-event-list p.lead{
+			font-size:14px;
+		}
+		
+		.de-event-list .small-border{
+		float:none;
+		margin:15px 0 15px 0;
+		background:rgba(255, 255, 255, .5);
+		width:50px;
+		}
+		
+		.de-event-list .social a:hover{
+		color:#fff;
+		}
+		
+		.de-event-list:hover .event-desc{
+			top:0;
+		}
+		
+		.de-event-contact{
+			text-align:center;
+		}
+		
+		.de-event-contact h3{
+			margin-bottom:0px;
+		}
+
+		
+	
+		
 	/* team
 	/* ================================================== */
 	.team {
@@ -4186,6 +4344,185 @@ border:solid 1px #ddd;
 		margin-bottom:10px;
 		font-size:20px;
 	}
+
+
+
+/* POSTER */
+	
+	.poster {
+	margin-bottom: 30px;
+	text-align:center;
+	}
+	
+	.poster h5 {
+	margin-bottom: 0;
+	}
+	
+	.poster_photo {
+	margin-bottom: 10px;
+	}
+	
+	.poster img.team-pic {
+	width: 100%;
+	height: auto;
+	}
+	
+	.pic-poster img{
+	width: 100%;
+	height: auto;
+	width:150px;
+	height:150px;
+	position:absolute;
+	}
+	
+	.pic-poster img.pic-hover{
+	z-index:100;
+	display:none;
+	}
+	
+	.poster .poster_desc {
+	font-style: italic;
+	margin-bottom: 10px;
+	}
+	
+	.poster .sb-icons {
+	padding: 10px 0 0 0;
+	}
+	
+	.poster .sb-icons img {
+	margin-right: 5px;
+	}
+	
+	.poster .columns {
+	margin-bottom: 30px;
+	}
+	
+	.poster-list{
+	min-height:180px;
+	margin-bottom:40px;
+	}
+	
+	.poster-list .poster-pic{
+	width:150px;
+	height:150px;
+	position:absolute;
+	}
+	
+	.poster-list h5{
+	margin-top:0;
+	margin-bottom:10px;
+	font-size:14px;
+	}
+	
+	.poster-list.poster_desc{
+	font-style:italic;
+	margin-bottom:10px;
+	}
+	
+	.poster-list .small-border{
+	float:none;
+	margin:15px 0 15px 0;
+	background:#ddd;
+	width:50px;
+	}
+	
+	.poster-list .social{
+	width:150px;
+	margin-top:170px;
+	text-align:center;
+	position:absolute;
+	}
+	
+	
+	.poster-list .social a{
+	display:inline-block;
+	}
+	
+	.poster-list .info{
+	padding-left:170px;
+	}
+	
+	.de-poster-list{
+		position:relative;
+		overflow:hidden;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+	
+	.de-poster-list img{
+		width:100%;
+	}
+	
+	.de-poster-list .poster-desc{
+		width:100%;
+		height:100%;
+		padding:40px;
+		padding-bottom:0;
+		position:absolute;
+		z-index:100;
+		top:100%;
+		background:#111;
+		color:#ccc;
+	}
+	
+	.de-poster-list p{
+		clear:both;
+	}
+	
+	.de-poster-list .team-desc h3{
+		color:#fff;
+		margin-bottom:5px;
+	}
+	
+	.de-poster-list .social{
+	}
+	
+	.de-poster-list .social a{
+	display:inline-block;
+	padding:0 5px 0 5px;
+	}
+	
+	.de-poster-list p.lead{
+		font-size:14px;
+	}
+	
+	.de-poster-list .small-border{
+	float:none;
+	margin:15px 0 15px 0;
+	background:rgba(255, 255, 255, .5);
+	width:50px;
+	}
+	
+	.de-poster-list .social a:hover{
+	color:#fff;
+	}
+	
+	.de-poster-list:hover .team-desc{
+		top:0;
+	}
+	
+	.de-poster-contact{
+		text-align:center;
+	}
+	
+	.de-poster-contact h3{
+		margin-bottom:10px;
+	}
+	
+	.de-poster-contact img{
+		width:60%;
+		margin-bottom:30px;
+	}
+	
+	.de-poster-contact.s2 img{
+		width:90%;
+	}
+	
+	.dtc-phone{
+		margin-bottom:10px;
+		font-size:20px;
+	}
 	
 
 
@@ -4302,6 +4639,8 @@ header.de_header_2.smaller .info,
 .picframe img,
 .de-team-list .team-desc,
 .de-team-list:hover .team-desc,
+.de-poster-list .poster-desc,
+.de-poster-list:hover .poster-desc,
 .box-number *,
 .de_nav *,
 .schedule-item *,
@@ -5789,6 +6128,19 @@ float:left;
 position:relative;
 }
 
+
+.container-4 .de-poster-list{
+width:24.9%;
+float:left;
+position:relative;
+}
+
+.container-3 .de-poster-list{
+width:33.3%;
+float:left;
+position:relative;
+}
+
 .no-margin{
 	margin:0 !important;
 }
@@ -7083,7 +7435,10 @@ display:table;
 	}
 	
 	.container-3 .de-team-list,
-	.container-4 .de-team-list{
+	.container-4 .de-team-list
+	.container-3 .de-poster-list,
+	.container-4 .de-poster-list
+	{
 	width:49.9%;
 	float:left;
 	position:relative;
@@ -7581,7 +7936,10 @@ display:table;
 	}
 	
 	.container-3 .de-team-list,
-	.container-4 .de-team-list{
+	.container-4 .de-team-list,
+	.container-3 .de-poster-list,
+	.container-4 .de-poster-list
+	{
 	width:100%;
 	float:left;
 	position:relative;
