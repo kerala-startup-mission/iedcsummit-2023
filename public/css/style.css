@@ -4118,6 +4118,7 @@ border:solid 1px #ddd;
 			z-index:100;
 			top:100%;
 			background:#111;
+			opacity: 0.9;
 			color:#ccc;
 		}
 		
