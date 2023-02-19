@@ -3,96 +3,87 @@ import Speaker from "./Speaker.astro";
 
 let speakers = [
   {
-    name : "P Rajeev",
-    designation: "Minister for industries, Law and Coir",
+    name: "P Rajeev",
+    designation: "Hon'ble Minister for industries, Law and Coir",
     organisation: "Government of Kerala",
-    image: "images/speakers/PRajeev.jpg"
+    image: "images/speakers/PRajeev.jpg",
   },
   {
-    name : "Kouchouesph Chitilapilly",
+    name: "Kouchouesph Chitilapilly",
     designation: "Founder, CEO",
-    organisation: " V-Gaurd industries and Wonderla",
-    image: "images/speakers/kochouseph.png"
+    organisation: " V-Guard industries and Wonderla",
+    image: "images/speakers/kochouseph.png",
   },
   {
-    name : "Poornima Indrajith",
+    name: "Poornima Indrajith",
     designation: "Actress",
     organisation: "Television presenter",
-    image: "images/speakers/Poornima.jpg"
+    image: "images/speakers/Poornima.jpg",
   },
   {
-    name : "Mathew Joseph",
+    name: "Mathew Joseph",
     designation: "COO",
     organisation: "Fresh to home",
-    image: "images/speakers/Mathew.jpg"
+    image: "images/speakers/Mathew.jpg",
   },
   {
-    name : "Gopikrishnan Sasikumar",
-    designation: "Machine learning Engineer",
+    name: "Gopikrishnan Sasikumar",
+    designation: "Senior Product Engineer",
     organisation: "",
-    image: "images/speakers/Gopikrishnan.jpeg"
+    image: "images/speakers/Gopikrishnan.jpeg",
   },
   {
-    name : "Najeeb Bin Haneef",
+    name: "Najeeb Bin Haneef",
     designation: "CEO",
     organisation: "Zaara Biotech",
-    image: "images/speakers/Najeeb.jpg"
+    image: "images/speakers/Najeeb.jpg",
   },
   {
-    name : "Aswathy Venugopal",
+    name: "Aswathy Venugopal",
     designation: "Co Founder",
     organisation: "Avasarshala",
-    image: "images/speakers/Ashwathy.png"
+    image: "images/speakers/Ashwathy.png",
   },
   {
-    name : "Jaison Sabu",
+    name: "Jaison Sabu",
     designation: "Founder and CEO",
     organisation: "Edurupt",
-    image: "images/speakers/Jaison.jpg"
+    image: "images/speakers/Jaison.jpg",
   },
   {
-    name : "John Mathew",
+    name: "John Mathew",
     designation: "Co-founder",
     organisation: "Riafy Technologies",
-    image: "images/speakers/John.jpeg"
+    image: "images/speakers/John.jpeg",
   },
   {
-    name : "Amitha Jobin",
+    name: "Amitha Jobin",
     designation: "Content creator",
     organisation: " ",
-    image: "images/speakers/Amitha.jpg"
+    image: "images/speakers/Amitha.jpg",
   },
-]
-
+];
 ---
 
 <!-- Section Speakers Begin -->
-
 <section id="section-speakers" class="jarallax text-light">
-  <img src="images/bg/1.jpg" class="jarallax-img" alt="">
+  <img src="images/bg/1.jpg" class="jarallax-img" alt="" />
   <div class="wm wm-border dark wow fadeInDown">speakers</div>
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
-          <h1>Speakers</h1>
-          <div class="separator"><span><i class="fa fa-square"></i></span></div>
-          <div class="spacer-single"></div>
+        <h1>Speakers</h1>
+        <div class="separator"><span><i class="fa fa-square"></i></span></div>
+        <div class="spacer-single"></div>
       </div>
-      
+
       <div class="clearfix"></div>
-  
-      {
-        speakers.map((item) => (
-          <Speaker {...item}/>
-        ))
-      }
 
-      
+      {speakers.map((item) => <Speaker {...item} />)}
+
       <div class="clearfix"></div>
-      
+    </div>
   </div>
-  </div>
-  </section>
+</section>
 
-
-  <!-- Section close -->
+<!-- Section close -->
