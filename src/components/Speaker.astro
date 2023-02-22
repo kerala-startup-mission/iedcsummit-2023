@@ -1,19 +1,24 @@
 ---
-const {name, designation, organisation, image} = Astro.props;
+const { name, designation, organisation, image } = Astro.props;
 ---
+
 <div class="col-lg-3 col-md-6 pt-4">
   <!-- team member -->
   <div class="de-team-list">
-		<div class="team-pic d-flex flex-col justify-content-center  align-items-center ">
-				<img src={image} class="img-responsive img-rounded" alt="" />
-				<h6 class="px-auto pt-2 text-white" >{name}</h6>
-		</div>
-		<div class="team-desc img-rounded pt-6 flex justify-content-center flex-column ">
-			<h3>{name}</h3>
-			<p class="lead mb-1">{designation}</p>
-			<p class="lead">{organisation}</p>
-			<div class="small-border"></div>
-		</div>
+    <div
+      class="team-pic d-flex flex-col justify-content-center align-items-center"
+    >
+      <img src={image} class="img-responsive img-rounded px-8" alt="" />
+      <h6 class="px-auto pt-2 text-white">{name}</h6>
+    </div>
+    <div
+      class="team-desc img-rounded pt-6 flex justify-content-center flex-column"
+    >
+      <h3>{name}</h3>
+      <p class="lead mb-1">{designation}</p>
+      <p class="lead">{organisation}</p>
+      <div class="small-border"></div>
+    </div>
   </div>
   <!-- team close -->
 </div>
