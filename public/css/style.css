@@ -4191,8 +4191,8 @@ border:solid 1px #ddd;
 	.pic-team img{
 	width: 100%;
 	height: auto;
-	width:150px;
-	height:150px;
+	width:100px;
+	height:100px;
 	position:absolute;
 	}
 	
@@ -4224,8 +4224,8 @@ border:solid 1px #ddd;
 	}
 	
 	.team-list .team-pic{
-	width:150px;
-	height:150px;
+	width:100px;
+	height:100px;
 	position:absolute;
 	}
 	
@@ -4363,7 +4363,7 @@ border:solid 1px #ddd;
 	}
 	
 	.poster img.team-pic {
-	width: 100%;
+	width: 90%;
 	height: auto;
 	}
 	
