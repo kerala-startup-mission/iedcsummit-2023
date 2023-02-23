@@ -1,0 +1,42 @@
+---
+import Event from "./Event.astro";
+
+let speakers = [
+  {
+    name: "Ideathon",
+    description: " Ideathons can be a starting point for entrepreneurs looking to launch their own business ventures. By providing a platform for individuals to pitch their ideas and receive feedback, ideathons can help turn innovative concepts into viable business plans.", 
+    button: "Register",
+    buttonlink: "https://bit.ly/summit23_ideathon",
+  },
+  {
+    name: "M.I.N.D",
+    description: " M.I.N.D provides a unique opportunity for the student innovators to leverage the knowledge and expertise of industry leaders, experienced founders, subject experts from the startup ecosystem.", 
+    button: "",
+    buttonlink: "",
+  },
+  
+];
+---
+
+<!-- Section Speakers Begin -->
+<section id="section-speakers" class="gradient-to-right text-light mb-24">
+  <!-- <img src="images/bg/blue.jpg" class="jarallax-img " alt="" /> -->
+  <div class="wm wm-border dark wow fadeInDown">speakers</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+        <h1>Speakers</h1>
+        <div class="separator"><span><i class="fa fa-square"></i></span></div>
+        <div class="spacer-single"></div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      {speakers.map((item) => <Speaker {...item} />)}
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Section close -->
