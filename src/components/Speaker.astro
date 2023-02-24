@@ -4,13 +4,13 @@ const { name, designation, organisation, image } = Astro.props;
 
 <div class="col-lg-3 col-md-6 pt-4">
   <!-- team member -->
-  <div class="de-team-list">
+  <div class="">
     <div
-      class="team-pic d-flex flex-col justify-content-center align-items-center"
+      class="de-team-list d-flex flex-col justify-content-center align-items-center"
     >
-      <img src={image} class="img-responsive img-rounded px-8" alt="" />
-      <h6 class="px-auto pt-2 text-white">{name}</h6>
-    </div>
+      <img src={image} class="team-pic  img-responsive img-rounded " alt="" />
+      
+    
     <div
       class="team-desc img-rounded pt-6 flex justify-content-center flex-column"
     >
@@ -19,6 +19,9 @@ const { name, designation, organisation, image } = Astro.props;
       <p class="lead">{organisation}</p>
       <div class="small-border"></div>
     </div>
+    </div>
+    <h6 class="align-items-center d-flex justify-content-center  px-auto pt-2 text-white">{name}</h6>
+    
   </div>
   <!-- team close -->
 </div>
