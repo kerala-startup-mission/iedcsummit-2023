@@ -1,4 +1,3 @@
-
 <section
   id="section-schedule"
   class="no-top no-bottom"
@@ -7,101 +6,605 @@
 >
 
 <style>
-    .dimension {
-        width: 800px;
-        height: 500px;
-    }
-    
-    .nav-tabs .nav-link.active {
-        background-color: rgb(54, 144, 212);
-        color: #fff;
-        border: 3px solid rgb(54, 144, 212);
-    }
-    
-    .nav-tabs .nav-link {
-        background-color: #fff;
-        color: rgb(54, 144, 212);
-        border: 3px solid rgb(54, 144, 212);
-        margin-right: 2rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    
-    .nav-tabs .nav-link:hover {
-        border: 3px solid rgb(54, 144, 212);
-    }
-    
-    .nav-tabs {
-        border-bottom: 1px solid rgb(54, 144, 212);
-    }
-    
-    .tab-content {
-        border: 1px solid rgb(54, 144, 212);
-        padding: 20px;
-    }
+
+   
+   .nav-tabs .nav-link.active {
+       margin : 2;
+       background-color: rgb(54, 144, 212);
+       border: 3px solid rgb(54, 144, 212);
+       color: #fff;
+      
+   }
+   
+   .nav-tabs .nav-link {
+       background-color: #fff;
+       color: rgb(54, 144, 212);
+       border: 3px solid rgb(54, 144, 212);
+       /* margin-right: 2rem;
+       margin-left: 2rem; */
+       padding-left: 3rem;
+       padding-right: 3rem;
+   }
+
+   
+   .nav-tabs .nav-link:hover {
+       border: 3px solid rgb(54, 144, 212);
+   }
+   
+   /* .nav-tabs {
+       border: 1px solid rgb(54, 144, 212);
+   } */
+   
+   .tab-content {
+       
+       padding: 20px;
+   }
 </style>
 
 
-<div class="container mt-2">
-    <h3 class="mb-3">Bootstrap 5 Tabs</h3>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#home">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-              </svg> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#profile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
-                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-              </svg> Profile</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#contact">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg> Contact</a>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane active" id="home">
-            <div class="row border g-0 rounded shadow-sm">
-                <div class="col p-4">
-                    <h3>Home</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-                
+
+<div
+class="wm wm-border light wow fadeInDown animated"
+style="visibility: visible; animation-name: fadeInDown; background-size: cover; opacity: 0;"
+>
+Schedule
+</div>
+
+<div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+   <h1 class="text-5xl">Schedule</h1>
+   <div class="separator"><span><i class="fa fa-square"></i></span></div>
+   <div class="spacer-single"></div>
+ </div>
+
+
+
+ <!-- <div class="row nav nav-tabs"> 
+   <div class="col-md-3  text-center p-4 nav-item m-0"><a class="nav-link active" data-bs-toggle="tab" href="#kea">KE AUTIDORIUM</a></div> 
+   <div class="col-md-3  text-center p-4 nav-item m-0"><a class="nav-link " data-bs-toggle="tab" href="#pg">PG BLOCK</a></div> 
+   <div class="col-md-3  text-center p-4 nav-item m-0"><a class="nav-link " data-bs-toggle="tab" href="#ke">KE BLOCK</a></div> 
+   <div class="col-md-3  text-center p-4 nav-item m-0"><a class="nav-link " data-bs-toggle="tab" href="#mainb">MAIN BLOCK</a></div> 
+
+</div > -->
+
+
+<div class = "row nav nav-tabs m-5">
+    <div class = "col-md-6 nav-item text-center mt-1 py-1"><a class="nav-link active py-2" data-bs-toggle="tab" href = "#kea">KE Auditorium</a></div>
+    <div class = "col-md-6 nav-item text-center mt-1 py-1"><a class="nav-link  py-2" data-bs-toggle="tab" href = "#sem">KE Seminar</a></div>
+    <!-- <div class = "col-md-3 nav-item text-center mt-1 py-1"><a class="nav-link " data-bs-toggle="tab" href = "#gal">Gallery Hall</a></div>
+    <div class = "col-md-3 nav-item text-center mt-1 py-1"><a class="nav-link " data-bs-toggle="tab" href = "#mul">Multimedia Hall</a></div>
+
+    <div class = "col-md-3 nav-item text-center mt-1 py-1"><a class="nav-link " data-bs-toggle="tab" href = "#lab">Labs</a></div>
+    <div class = "col-md-3 nav-item text-center mt-1 py-1"><a class="nav-link " data-bs-toggle="tab" href = "#open">Open Venues</a></div>
+    <div class = "col-md-3 nav-item text-center mt-1 py-1"><a class="nav-link " data-bs-toggle="tab" href = "#class">Classrooms</a></div>
+    <div class = "col-md-3 nav-item text-center mt-1 py-1"><a class="nav-link " data-bs-toggle="tab" href = "#other">Others</a></div> -->
+</div>
+
+
+
+
+<div class="tab-content m-5">
+  <div class="tab-pane active" id="kea">
+    <div class="row border g-0 rounded shadow-sm p-0">
+ 
+     <div  class="row m-0 p-0 ">
+     <div style="background: #3690D4" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">9:30 AM</h3></div>
+     <div  class="col-md-9 m-0 p-2 px-5">
+         <h5>Prayer</h5>       
+         <p>College Choir</p>
+     </div>
+     </div>
+
+
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">9:32 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Welcome</h5>
+        
+             <h6>Dr P.S Sreejith </h6>
+             <p class="m-0 p-0">Principal, Rajagiri School of Engineering & Technology</p>
+         </div>
+     </div>
+
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4" class="d-flex align-items-center justify-content-center  col-md-3  p-2"><h3 class=" text-light text-center my-auto">9:37 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Presidential Address</h5>
+             <h6>Sri Anoop Ambika </h6>
+             <p class="m-0 p-0">CEO, Kerala Startup Mission</p>
+         </div>
+     </div>
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">9:47 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Inaugural Address</h5>
+        
+             <h6>Sri. Rajeev Chandrasekhar</h6>
+             <p class="m-0 p-0">Incumbent Minister of State for Skill Development and Entrepreneurship and Electronics and Information Technology of India</p>
+         </div>
+     </div>
+
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4" class="d-flex align-items-center justify-content-center  col-md-3  p-2"><h3 class=" text-light text-center my-auto">9:57 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Address by Guest of Honour</h5>
+             <h6>Sri. P. Rajeev </h6>
+             <p class="m-0 p-0">Minister for Industries, Law and Coir Government of Kerala</p>
+         </div>
+     </div>
+
+
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">10:07 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Key Note Address</h5>
+        
+             <h6>Sri. Kochouseph Chittilappily</h6>
+             <p class="m-0 p-0">Founder,Chairman, CEO of V-Guard industries</p>
+         </div>
+     </div>
+
+
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4" class="d-flex align-items-center justify-content-center  col-md-3  p-2"><h3 class=" text-light text-center my-auto">10:22 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Special Address</h5>
+             <h6>Sri. Shivangi Jain</h6>
+             <p class="m-0 p-0">Assistant Vice President Invest India</p>
+         </div>
+     </div>
+
+
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">10:32 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Special Address</h5>
+        
+             <h6>Rev. Dr. Jose Kuriedath CMI </h6>
+             <p class="m-0 p-0">Director Rajagiri School of Engineering & Technology</p>
+         </div>
+     </div>
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4 " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">10:37 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Prize Distribution</h5>
+        
+             <h6>Rev. Dr. Jose Kuriedath CMI </h6>
+             <p class="m-0 p-0">IPL 2.0 Prize Winners</p>
+         </div>
+     </div>
+
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3  p-2"><h3 class=" text-light text-center my-auto">10:42 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Vote of Thanks</h5>
+             <h6>Nodal Officer</h6>
+         </div>
+     </div>
+
+
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4 " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">10:45 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Fire Side Chat</h5>
+        
+             <div class="d-flex align-items-start justify-content-start">
+
+
+                 <h6 class="mr-1">Speaker: </h6>
+
+                 <div>
+                 <h6 class="m-0">Poornima Indrajith </h6>
+                 <p class="m-0 p-0">Actor, Founder of Pranaah</p>
+                 </div>
+             
+             
+             </div>
+         </div>
+     </div>
+
+
+
+
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6 " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">11:20 AM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold text-blue-600">Panel Discussion </h5>
+        
+             <div class="pt-2 d-flex align-items-start justify-content-start">
+                 <h6 class="mr-1">Moderator: </h6>
+                 <div>
+                 <h6 class="m-0">Dr. Deepu Krishnan P R </h6>
+                 <p class="m-0 p-0">Assistant Manager, RINK</p>
+                 </div>
+             </div>
+        
+             <div class="pt-3 d-flex align-items-start justify-content-start">
+                 <h6 class="mr-1">Panelists: </h6>
+                 <div>
+                 <h6 class="m-0"><span>Sri. Rahul Ramesh </span></h6><p class="m-0 p-0"><span> Co - Founder & CTO, Entri App</span></p></span>
+                 <div>
+                 <h6 class="m-0">Sri. Hinshara Habeeb </h6>
+                 <p class="m-0 p-0">Co-Founder Manetain Store</p>
+                 </div>
+                 <div>
+                 <h6 class="m-0">Dr. Lini Basil </h6>
+                 <p class="m-0 p-0"> Founder Bylin Medtech Pvt. Ltd.</p>
+                 </div>
+                 <div>
+                 <h6 class="m-0">Vishnu Ramakrishnan</h6>
+                 <p class="m-0 p-0">Founders office, The ePlane company</p>
+                 </div>
+                 </div>
+             </div>
+
+
+         </div>
+     </div>
+
+
+    
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4   " class="d-flex align-items-center justify-content-center  col-md-3  p-2"><h3 class=" text-light text-center my-auto">11:50 AM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Evangelist & Content creators Panel Discussion</h5>
+
+             <div class="pt-3 d-flex align-items-start justify-content-start">
+                 <h6 class="mr-1">Panelists: </h6>
+                 <div>
+                 <h6 class="m-0"><span>Dhanya Ravi </span></h6><p class="m-0 p-0"><span>Glass Woman of India</span></p></span>
+                 <div>
+                 <h6 class="m-0">Ajay Balachandran </h6>
+                 <!-- <p class="m-0 p-0">Co-Founder Manetain Store</p> -->
+                 </div>
+                 <div>
+                 <h6 class="m-0">Gokul Retnakar </h6>
+                 <!-- <p class="m-0 p-0"> Founder Bylin Medtech Pvt. Ltd.</p> -->
+                 </div>
+              
+                 </div>
+             </div>
+
+         </div>
+     </div>
+    
+ 
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6 " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">12:20 PM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold"> Social Innovation</h5>
+        
+             <h6 class="mb-0 p-0"> Robin Tommy </h6>
+             <p class="m-0 p-0">Social Innovation & Startup Mentor, TCS</p>
+         </div>
+     </div>
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3  p-4"><h3 class=" text-light text-center my-auto">1:00 PM - 1:30 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="pt-4 pb-4">Lunch Break</h5>
+             
+         </div>
+     </div>
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">1:30 PM - 1:50 PM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold"> Band Performance </h5>
+             <h6 class="mb-0 p-0"> College Band</h6>
+             <p class="m-0 p-0">LIME TEA</p>
+         </div>
+     </div>
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3  p-4"><h3 class=" text-light text-center my-auto">1:50 PM - 2:00 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Standup Comedy</h5>
+             <p> Vinay Menon</p>
+         </div>
+     </div>
+
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">2:00 PM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">  Corporate Talk </h5>
+             <h6 class="mb-0 p-0"> Mr Krushnakant Sinojia </h6>
+             <p class="m-0 p-0">Head Of Innovation | Startup | Incubationl Crompton Greaves</p>
+         </div>
+     </div>
+
+
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3  p-4"><h3 class=" text-light text-center my-auto">2:20 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+         <h5 class="fw-semibold">  Influencer Panel </h5>   
+         <div class="pt-3 d-flex align-items-start justify-content-start">
+             <h6 class="mr-1">Panelists: </h6>
+             <div>
+             <h6 class="m-0"><span>Joel Joseph</span></h6><p class="m-0 p-0"><span> Instagram content creator </span></p></span>
+             <div>
+             <h6 class="m-0">Gokul Raj </h6>
+             <p class="m-0 p-0">Instagram content creator</p>
+             </div>      
+             </div>
+         </div>
+
+         </div>
+     </div>
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background:  #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">2:50 PM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">  Founder Talk - Co creating with the machine - Ghostwriter </h5>
+             <h6 class="mb-0 p-0"> Arvind Sanjeev </h6>
+             <p class="m-0 p-0">Interative Designer Co-founder, Lumen.world</p>
+         </div>
+     </div>
+
+    
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3  p-4"><h3 class=" text-light text-center my-auto">3:50 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+         <h5 class="fw-semibold">  Fireside Chat  </h5> 
+         <div class="pt-3 d-flex align-items-start justify-content-start">
+             <h6 class="mr-1">Panelists: </h6>
+             <div>
+             <h6 class="m-0"><span>Balagopal Chandrashekar</span></h6><p class="m-0 p-0"><span> Chairman- Federal Bank</span></p></span>
+             <div>
+             <h6 class="m-0">Souvik Roy</h6>
+             <p class="m-0 p-0">Head of Investor Relations - Federal bank</p>
+             </div>      
+             </div>
+         </div>
+     </div>
+     </div>
+
+
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background:  #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">4:30 PM</h3></div>
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5>Prayer</h5>       
+             <p>College Choir</p>
+         </div>
+     </div>
+ 
+ 
+ 
+        
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">4:32 PM </h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Welcome</h5>
+             <p>RSET </p>
+         </div>
+     </div>
+
+
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6 " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">4:37 PM</h3></div>
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="m-0">Presidential Address</h5>       
+             <p>KSUM</p>
+         </div>
+     </div>
+ 
+ 
+ 
+        
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">4:47 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Key Note Address</h5>
+             <h6>Renu Raj IAS</h6>
+             <p>District Collector, Ernakulam</p>
+         </div>
+     </div>
+     
+     
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">4:57 PM</h3></div>
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Key Note Address</h5>
+             <h6 class="m-0">Shri Loknath Behra IPS</h6>       
+             <p>MD, KMRL</p>
+         </div>
+     </div>
+ 
+ 
+        
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">5:07 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold">Special Address</h5>
+             <!-- <h6>Renu Raj IAS</h6> -->
+             <p>CEO , KIED</p>
+         </div>
+     </div>
+     
+     
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">5:27 PM</h3></div>
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="m-0">Honoring the Innovators</h5>       
+             <p> Idea fest 2022</p>
+         </div>
+     </div>
+        
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #3690D4  " class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">5:32 PM</h3></div>    
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="fw-semibold"> Felicitation Address</h5>
+             <!-- <h6>Renu Raj IAS</h6> -->
+             <p> NEST LEAD</p>
+         </div>
+     </div>
+     
+     
+     <div  class="row m-0 p-0 border-top">
+         <div style="background: #7eb9e6" class="d-flex align-items-center justify-content-center  col-md-3 p-2"><h3 class=" text-light text-center my-auto">5:37 PM</h3></div>
+         <div  class="col-md-9 m-0 p-2 px-5">
+             <h5 class="m-0">Vote of Thanks</h5>       
+             <p> RSET</p>
+         </div>
+     </div>
+ 
+ 
+ 
+  
+
+
+    
+</div>
+</div>
+
+
+
+
+   <div class="tab-pane" id="sem">
+    <div class="row border g-0 rounded shadow-sm">
+      <div class="row m-0 p-0 border-top">
+        <div
+          style="background: #3690D4"
+          class="d-flex align-items-center justify-content-center col-md-3 p-2"
+        >
+          <h3 class="text-light text-center my-auto">11:00 AM</h3>
+        </div>
+        <div class="col-md-9 m-0 p-2 px-5">
+          <h5>A Future that is Shaped by Metaverse - Masterclass</h5>
+          <h6>Densil Antony</h6>
+          <p class="m-0 p-0">CEO, XR Horizon</p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-0 border-top">
+        <div
+          style="background: #7eb9e6"
+          class="d-flex align-items-center justify-content-center col-md-3 p-2"
+        >
+          <h3 class="text-light text-center my-auto">1:00 PM - 1:30 PM</h3>
+        </div>
+        <div class="col-md-9 m-0 p-2 px-5">
+          <h5 class="fw-semibold py-4">Lunch Break</h5>
+
+          <h6></h6>
+          <p class="m-0 p-0"></p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-0 border-top">
+        <div
+          style="background: #3690D4"
+          class="d-flex align-items-center justify-content-center col-md-3 p-2"
+        >
+          <h3 class="text-light text-center my-auto">1:30 PM</h3>
+        </div>
+        <div class="col-md-9 m-0 p-2 px-5">
+          <h5>Master Class (Student Lead/Co-Lead)</h5>
+          <h6>Najeeb Bin Haneef</h6>
+          <p class="m-0 p-0">CEO, Zaarabiotech</p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-0 border-top">
+        <div
+          style="background: #7eb9e6"
+          class="d-flex align-items-center justify-content-center col-md-3 p-2"
+        >
+          <h3 class="text-light text-center my-auto">2:30 PM</h3>
+        </div>
+        <div class="col-md-9 m-0 p-2 px-5">
+          <h5 class="fw-semibold">Master Class (Finance Lead/Co-Lead)</h5>
+
+          <h6>Charles Thayyil</h6>
+          <p class="m-0 p-0">Managing Director - Tech7, Director - UNIVEND</p>
+        </div>
+      </div>
+
+
+
+
+
+      <div  class="row m-0 p-0 border-top">
+        <div style="background: #3690D4 " class="d-flex align-items-center justify-content-center  col-md-3  p-4"><h3 class=" text-light text-center my-auto">3:30 PM </h3></div>    
+        <div  class="col-md-9 m-0 p-2 px-5">
+        <h5 class="fw-semibold">  Panel Discussion </h5> 
+
+        <div class="pt-2 d-flex align-items-start justify-content-start">
+            <h6 class="mr-1">Moderator :</h6>
+            <div>
+              <h6 class="m-0">Sreeja M</h6>
+              <p class="m-0 p-0">Research Engineer-AI, Zappyhire</p>
             </div>
         </div>
-        <div class="tab-pane" id="profile">
-            <div class="row border g-0 rounded shadow-sm">
-                <div class="col p-4">
-                    <h3>Profile</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-        <div class="tab-pane" id="contact">
-            <div class="row border g-0 rounded shadow-sm">
-                <div class="col p-4">
-                    <h3>Contact</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                </div>
+
+        <div class="pt-3 d-flex align-items-start justify-content-start">
+            <h6 class="mr-1">Panelists : </h6>
+            <div>
+            <h6 class="m-0"><span>Girish Rengaswamy </span></h6><p class="m-0 p-0"><span>Senior Engineering Manager, Mobile R&D</span></p></span>
+            <div>
+            <h6 class="m-0">Gopikrishnan Sasikumar</h6>
+            <p class="m-0 p-0">Senior Product Engineer, Entri</p>
+            </div>      
+            <div>
+            <h6 class="m-0">Joy Sebastian</h6>
+            <p class="m-0 p-0">CEO Techgentsia</p>
+            </div>      
                 
             </div>
         </div>
     </div>
+    </div>
+
+    </div>
+  </div>
+
+
+
+
+
+   
+
+
+
+
 
 </div>
+
+
+
+
+
+
 
 </section>
