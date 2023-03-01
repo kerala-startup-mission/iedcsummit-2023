@@ -432,11 +432,11 @@ jQuery(document).ready(function () {
                     header = document.querySelector("header");
                 if (distanceY > shrinkOn) {
                     classie.add(header, "smaller");
-                    document.querySelector('#nav-logo').classList.remove('hidden');
+                    // document.querySelector('#nav-logo').classList.remove('hidden');
                 } else {
                     if (classie.has(header, "smaller")) {
                         classie.remove(header, "smaller");
-                        document.querySelector('#nav-logo').classList.add('hidden');
+                        // document.querySelector('#nav-logo').classList.add('hidden');
                     }
 
                 }
