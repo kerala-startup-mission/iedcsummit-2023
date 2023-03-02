@@ -1,14 +1,19 @@
 ---
 import Schedule from "../components/Schedule.astro";
 import Layout from "../layouts/Layout.astro";
-
-
-
 ---
-<Layout>
+<!-- <Layout> -->
 
-    <button onclick="history.back()" class=" bg-transparent border-none absolute  p-4"><img style = "height:100px;" src="/images/summitlogo.png" alt="Logo" ></button>
-    <Schedule/>
+<link rel="stylesheet" href="https://events.startupmission.in/css/base.css">
+<link rel="stylesheet" href="https://events.startupmission.in/css/agenda.css">
 
 
-</Layout>
+<button onclick="history.back()" class=" bg-transparent border-none absolute  p-4"><img style = "height:100px;" src="/images/summitlogo.png" alt="Logo" ></button>
+    
+<section class="py-24">
+    <div class="container-xl mx-auto">
+        <script src="https://events.startupmission.in/js/agenda_detailed.js" data-event="iedc-2023" data-type="venue_detail"></script>
+    </div>
+</section>
+    
+<!-- </Layout> -->
